@@ -21,6 +21,7 @@ namespace QlyBanHang
         {
             int a = 1;
             SaveFileDialog;
+            int b = 2;  
         }
     }
 }
