@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|d:\\all\\doanqlybanhang\\qlybanhang\\qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|d:\\all\\doanqlybanhang\\qlybanhang\\qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|d:\\all\\doanqlybanhang\\qlybanhang\\qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,20 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Form1.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\Form1.cs",
               "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Form1.cs",
               "RelativeToolTip": "QlyBanHang\\Form1.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:32:09.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Form1.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\Form1.cs",
