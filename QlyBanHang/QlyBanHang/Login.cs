@@ -10,18 +10,25 @@ using System.Windows.Forms;
 
 namespace QlyBanHang
 {
-    public partial class Form1: Form
+    public partial class Login: Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int a = 1;
-            SaveFileDialog;
-            int b = 2;  
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
