@@ -1,0 +1,12 @@
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\bin\Debug\QlyBanHang.exe.config
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\bin\Debug\QlyBanHang.exe
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\bin\Debug\QlyBanHang.pdb
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.AssemblyReference.cache
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.home.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.Login.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.Properties.Resources.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.GenerateResource.cache
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.CoreCompileInputs.cache
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.exe
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.pdb
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_TrangChu.resources

@@ -16,5 +16,41 @@ namespace QlyBanHang
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+                    }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadPage(new UC_TrangChu());
+        }
+
+        private void home_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void LoadPage(UserControl uc)
+{
+    panelContent.Controls.Clear();
+    uc.Dock = DockStyle.Fill;
+    panelContent.Controls.Add(uc);
+}
+
     }
 }
