@@ -60,11 +60,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC_TrangChu.cs">
+    <Compile Include="UC_DonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_TrangChu.Designer.cs">
-      <DependentUpon>UC_TrangChu.cs</DependentUpon>
+    <Compile Include="UC_DonHang.Designer.cs">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_KhachHang.Designer.cs">
+      <DependentUpon>UC_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SanPham.Designer.cs">
+      <DependentUpon>UC_SanPham.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
@@ -81,8 +93,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UC_TrangChu.resx">
-      <DependentUpon>UC_TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="UC_DonHang.resx">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SanPham.resx">
+      <DependentUpon>UC_SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

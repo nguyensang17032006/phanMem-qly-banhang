@@ -28,7 +28,7 @@ namespace QlyBanHang
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LoadPage(new UC_TrangChu());
+            LoadPage(new UC_SanPham());
         }
 
         private void home_Load(object sender, EventArgs e)
@@ -38,7 +38,8 @@ namespace QlyBanHang
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            
+            LoadPage(new UC_SanPham());
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -46,11 +47,37 @@ namespace QlyBanHang
 
         }
         private void LoadPage(UserControl uc)
-{
-    panelContent.Controls.Clear();
-    uc.Dock = DockStyle.Fill;
-    panelContent.Controls.Add(uc);
-}
+        {
+            panelContent.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            panelContent.Controls.Add(uc);
+        }
 
+        private void btnDonHang_Click(object sender, EventArgs e)
+        {
+            LoadPage(new UC_DonHang());
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            LoadPage(new UC_KhachHang());
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().Show();
+        }
+
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelContent_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
