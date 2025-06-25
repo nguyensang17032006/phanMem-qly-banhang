@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
-            this.label1 = new System.Windows.Forms.Label();
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnDonHang = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
@@ -41,14 +40,13 @@
             this.lblTenNV = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSanPham
             // 
@@ -133,34 +131,63 @@
             // 
             resources.ApplyResources(this.panelContent, "panelContent");
             this.panelContent.Name = "panelContent";
+            this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint_2);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnThoat);
+            this.panel1.Controls.Add(this.lblChucVu);
+            this.panel1.Controls.Add(this.btnDoanhThu);
+            this.panel1.Controls.Add(this.panelContent);
+            this.panel1.Controls.Add(this.btnSanPham);
+            this.panel1.Controls.Add(this.lblTenNV);
+            this.panel1.Controls.Add(this.btnDonHang);
+            this.panel1.Controls.Add(this.btnKho);
+            this.panel1.Controls.Add(this.btnNCC);
+            this.panel1.Controls.Add(this.btnNhanVien);
+            this.panel1.Controls.Add(this.btnKhachHang);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // home
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ControlBox = false;
-            this.Controls.Add(this.panelContent);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.lblTenNV);
-            this.Controls.Add(this.lblChucVu);
-            this.Controls.Add(this.btnDoanhThu);
-            this.Controls.Add(this.btnNCC);
-            this.Controls.Add(this.btnNhanVien);
-            this.Controls.Add(this.btnKho);
-            this.Controls.Add(this.btnKhachHang);
-            this.Controls.Add(this.btnDonHang);
-            this.Controls.Add(this.btnSanPham);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "home";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.home_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSanPham;
         private System.Windows.Forms.Button btnDonHang;
         private System.Windows.Forms.Button btnKhachHang;
@@ -172,5 +199,9 @@
         private System.Windows.Forms.Label lblTenNV;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Panel panelContent;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

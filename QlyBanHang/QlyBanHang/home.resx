@@ -118,47 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe Script, 19.8000011pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-5, 0</value>
-  </data>
-  <data name="label1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>200, 0, 0, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>808, 112</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Shop Bán Hàng</value>
-  </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <data name="btnSanPham.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnSanPham.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
@@ -166,16 +129,17 @@
     <value>NoControl</value>
   </data>
   <data name="btnSanPham.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 109</value>
+    <value>0, 242</value>
   </data>
   <data name="btnSanPham.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSanPham.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="btnSanPham.Text" xml:space="preserve">
-    <value>Sản Phẩm</value>
+    <value>Sản phẩm</value>
   </data>
   <data name="&gt;&gt;btnSanPham.Name" xml:space="preserve">
     <value>btnSanPham</value>
@@ -184,10 +148,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSanPham.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnSanPham.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="btnDonHang.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -199,16 +163,16 @@
     <value>NoControl</value>
   </data>
   <data name="btnDonHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 155</value>
+    <value>0, 303</value>
   </data>
   <data name="btnDonHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
   <data name="btnDonHang.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="btnDonHang.Text" xml:space="preserve">
-    <value>Đơn Hàng</value>
+    <value>Đơn hàng</value>
   </data>
   <data name="&gt;&gt;btnDonHang.Name" xml:space="preserve">
     <value>btnDonHang</value>
@@ -217,10 +181,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDonHang.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnDonHang.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="btnKhachHang.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -232,16 +196,16 @@
     <value>NoControl</value>
   </data>
   <data name="btnKhachHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 200</value>
+    <value>0, 364</value>
   </data>
   <data name="btnKhachHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
   <data name="btnKhachHang.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="btnKhachHang.Text" xml:space="preserve">
-    <value>Khách Hàng</value>
+    <value>Khách hàng</value>
   </data>
   <data name="&gt;&gt;btnKhachHang.Name" xml:space="preserve">
     <value>btnKhachHang</value>
@@ -250,10 +214,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnKhachHang.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnKhachHang.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="btnKho.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -265,16 +229,16 @@
     <value>NoControl</value>
   </data>
   <data name="btnKho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 339</value>
+    <value>0, 547</value>
   </data>
   <data name="btnKho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
   <data name="btnKho.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="btnKho.Text" xml:space="preserve">
-    <value>Kho Hàng</value>
+    <value>Kho hàng</value>
   </data>
   <data name="&gt;&gt;btnKho.Name" xml:space="preserve">
     <value>btnKho</value>
@@ -283,10 +247,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnKho.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnKho.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btnNhanVien.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -298,16 +262,16 @@
     <value>NoControl</value>
   </data>
   <data name="btnNhanVien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 384</value>
+    <value>0, 608</value>
   </data>
   <data name="btnNhanVien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
   <data name="btnNhanVien.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="btnNhanVien.Text" xml:space="preserve">
-    <value>Nhân Viên</value>
+    <value>Nhân viên</value>
   </data>
   <data name="&gt;&gt;btnNhanVien.Name" xml:space="preserve">
     <value>btnNhanVien</value>
@@ -316,10 +280,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnNhanVien.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnNhanVien.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="btnNCC.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -331,16 +295,16 @@
     <value>NoControl</value>
   </data>
   <data name="btnNCC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 294</value>
+    <value>0, 486</value>
   </data>
   <data name="btnNCC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
   <data name="btnNCC.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="btnNCC.Text" xml:space="preserve">
-    <value>Nhà Cung Cấp</value>
+    <value>Nhà cung cấp</value>
   </data>
   <data name="&gt;&gt;btnNCC.Name" xml:space="preserve">
     <value>btnNCC</value>
@@ -349,10 +313,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnNCC.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnNCC.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="btnDoanhThu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -364,16 +328,16 @@
     <value>NoControl</value>
   </data>
   <data name="btnDoanhThu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 247</value>
+    <value>0, 425</value>
   </data>
   <data name="btnDoanhThu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 48</value>
+    <value>288, 61</value>
   </data>
   <data name="btnDoanhThu.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="btnDoanhThu.Text" xml:space="preserve">
-    <value>Doanh Thu</value>
+    <value>Doanh thu</value>
   </data>
   <data name="&gt;&gt;btnDoanhThu.Name" xml:space="preserve">
     <value>btnDoanhThu</value>
@@ -382,10 +346,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDoanhThu.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnDoanhThu.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="lblChucVu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -394,7 +358,7 @@
     <value>Microsoft Sans Serif, 10.2pt, style=Bold, Italic</value>
   </data>
   <data name="lblChucVu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 45</value>
+    <value>11, 39</value>
   </data>
   <data name="lblChucVu.Size" type="System.Drawing.Size, System.Drawing">
     <value>228, 20</value>
@@ -412,10 +376,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblChucVu.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblChucVu.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="lblTenNV.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -427,10 +391,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblTenNV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 17</value>
+    <value>11, 9</value>
   </data>
   <data name="lblTenNV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 20</value>
+    <value>250, 20</value>
   </data>
   <data name="lblTenNV.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -445,10 +409,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblTenNV.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblTenNV.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="btnThoat.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -457,7 +421,7 @@
     <value>Leelawadee UI, 10.2pt, style=Bold</value>
   </data>
   <data name="btnThoat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>701, 71</value>
+    <value>15, 194</value>
   </data>
   <data name="btnThoat.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 32</value>
@@ -475,16 +439,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnThoat.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnThoat.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="panelContent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 109</value>
+    <value>287, 242</value>
   </data>
   <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>637, 323</value>
+    <value>1296, 427</value>
   </data>
   <data name="panelContent.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -496,9 +460,114 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelContent.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;panelContent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 48pt, style=Bold</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 129</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>859, 97</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>QUẢN LÝ BÁN HÀNG</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 48pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 32</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 97</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>PHẦN MỀM</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1296, 243</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1586, 669</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -508,10 +577,16 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 432</value>
+    <value>1583, 669</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>home</value>
+    <value>Home</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>home</value>

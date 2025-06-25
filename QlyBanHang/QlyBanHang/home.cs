@@ -66,7 +66,7 @@ namespace QlyBanHang
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             new Login().Show();
         }
 
@@ -76,6 +76,11 @@ namespace QlyBanHang
         }
 
         private void panelContent_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelContent_Paint_2(object sender, PaintEventArgs e)
         {
 
         }

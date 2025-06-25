@@ -59,8 +59,11 @@ namespace QlyBanHang
                         MessageBox.Show("Đăng nhập thành công với quyền: " + quyen);
 
                         // Mở form chính
+                        
                         this.Hide();
-                        new home().Show();
+                        home home = new home();
+                        home.FormClosed += (s, args) => Application.Exit(); // Khi form Home đóng thì thoát app
+                        home.Show();
                     }
                     else
                     {
@@ -68,6 +71,11 @@ namespace QlyBanHang
                     }
                 }
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
