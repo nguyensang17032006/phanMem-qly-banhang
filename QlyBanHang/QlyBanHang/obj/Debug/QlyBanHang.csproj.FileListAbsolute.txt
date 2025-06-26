@@ -11,3 +11,4 @@ D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.exe
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.pdb
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_DonHang.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_SanPham.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhachHang.resources

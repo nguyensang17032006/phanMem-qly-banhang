@@ -60,6 +60,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDangNhapDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDangNhapDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UC_DonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,9 +97,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UC_DonHang.resx">
       <DependentUpon>UC_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_KhachHang.resx">
+      <DependentUpon>UC_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_SanPham.resx">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
@@ -108,9 +117,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLDangNhapDataSet.xsc">
+      <DependentUpon>QLDangNhapDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLDangNhapDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDangNhapDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDangNhapDataSet.xss">
+      <DependentUpon>QLDangNhapDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4115235-exit-logout-sign-out_114030.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

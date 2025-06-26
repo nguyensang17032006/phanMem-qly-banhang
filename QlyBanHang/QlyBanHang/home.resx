@@ -129,10 +129,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnSanPham.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 242</value>
+    <value>0, 70</value>
   </data>
   <data name="btnSanPham.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSanPham.TabIndex" type="System.Int32, mscorlib">
@@ -148,10 +148,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSanPham.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSanPham.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnDonHang.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -163,10 +163,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnDonHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 303</value>
+    <value>0, 150</value>
   </data>
   <data name="btnDonHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <data name="btnDonHang.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -181,10 +181,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDonHang.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDonHang.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btnKhachHang.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -196,10 +196,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnKhachHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 364</value>
+    <value>0, 230</value>
   </data>
   <data name="btnKhachHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <data name="btnKhachHang.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -214,10 +214,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnKhachHang.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnKhachHang.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>4</value>
   </data>
   <data name="btnKho.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -229,10 +229,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnKho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 547</value>
+    <value>0, 470</value>
   </data>
   <data name="btnKho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <data name="btnKho.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -247,10 +247,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnKho.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnKho.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="btnNhanVien.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -262,10 +262,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnNhanVien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 608</value>
+    <value>0, 550</value>
   </data>
   <data name="btnNhanVien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <data name="btnNhanVien.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -280,10 +280,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnNhanVien.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNhanVien.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="btnNCC.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -295,10 +295,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnNCC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 486</value>
+    <value>0, 390</value>
   </data>
   <data name="btnNCC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <data name="btnNCC.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -313,10 +313,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnNCC.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNCC.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>2</value>
   </data>
   <data name="btnDoanhThu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -328,10 +328,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnDoanhThu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 425</value>
+    <value>0, 310</value>
   </data>
   <data name="btnDoanhThu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 61</value>
+    <value>288, 80</value>
   </data>
   <data name="btnDoanhThu.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -346,7 +346,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDoanhThu.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDoanhThu.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -355,13 +355,13 @@
     <value>True</value>
   </data>
   <data name="lblChucVu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt, style=Bold, Italic</value>
+    <value>Tahoma, 10.2pt, style=Bold, Italic</value>
   </data>
   <data name="lblChucVu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 39</value>
+    <value>13, 38</value>
   </data>
   <data name="lblChucVu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 20</value>
+    <value>238, 21</value>
   </data>
   <data name="lblChucVu.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -379,22 +379,22 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblChucVu.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="lblTenNV.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblTenNV.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt, style=Bold, Italic</value>
+    <value>Tahoma, 10.2pt, style=Bold, Italic</value>
   </data>
   <data name="lblTenNV.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblTenNV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 9</value>
+    <value>12, 9</value>
   </data>
   <data name="lblTenNV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 20</value>
+    <value>254, 21</value>
   </data>
   <data name="lblTenNV.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -412,25 +412,34 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblTenNV.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="btnThoat.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+    <value>Flat</value>
   </data>
   <data name="btnThoat.Font" type="System.Drawing.Font, System.Drawing">
     <value>Leelawadee UI, 10.2pt, style=Bold</value>
   </data>
+  <data name="btnThoat.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnThoat.ImageKey" xml:space="preserve">
+    <value>(none)</value>
+  </data>
   <data name="btnThoat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 194</value>
+    <value>1475, 7</value>
   </data>
   <data name="btnThoat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 32</value>
+    <value>103, 57</value>
   </data>
   <data name="btnThoat.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
   <data name="btnThoat.Text" xml:space="preserve">
     <value>Thoát</value>
+  </data>
+  <data name="btnThoat.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;btnThoat.Name" xml:space="preserve">
     <value>btnThoat</value>
@@ -442,13 +451,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnThoat.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="panelContent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 242</value>
+    <value>288, 70</value>
   </data>
   <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1296, 427</value>
+    <value>1296, 560</value>
   </data>
   <data name="panelContent.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -460,100 +469,16 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelContent.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;panelContent.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 48pt, style=Bold</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 129</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>859, 97</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>QUẢN LÝ BÁN HÀNG</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 48pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 32</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 97</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>PHẦN MỀM</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1296, 243</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 0</value>
+    <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1586, 669</value>
+    <value>1581, 70</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -570,23 +495,117 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="qLDangNhapDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="qLDangNhapDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>218, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1583, 669</value>
+    <value>1583, 630</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABx2AAAcdgAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAACAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAgAAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAQAAAABAAAAAAAAAAAAAAABAAAABAAA
+        AAMAAAABAAAAAAAAAAMAAAAAAAAAJwAAAFUAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAAAAAAAAAAAAEAAAABQAA
+        AAAAAAAAAAAAAAAAAAEAAAAFAAAAAAAAABgAAADRAAAA/wAAAGIAAAAAAAAAAwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAAwAAAEAAAACRAAAAxwAA
+        AOAAAADhAAAAywAAAJkAAABKAAAABwAAAAAAAAAZAAAA0gAAAP8AAADyAAAARgAAAAAAAAACAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAEQAAADMAAAA/wAA
+        AP4AAAD/AAAA/wAAAP8AAAD/AAAA/gAAAP8AAADWAAAAWgAAAMkAAAD/AAAA8AAAADwAAAAAAAAAAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAUAAACTAAAA/wAA
+        AP8AAADTAAAAcQAAADUAAAAfAAAAIQAAAD0AAACAAAAA2AAAAP8AAAD+AAAA/wAAAPIAAAA/AAAAAAAA
+        AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAANAAAAugAA
+        AP8AAADuAAAAZgAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAqAAAA7AAAAP8AAADxAAAAPQAA
+        AAAAAAAFAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACAAA
+        AL0AAAD/AAAA1wAAACkAAAAAAAAABAAAAAMAAAAAAAAAAgAAAAQAAAAAAAAAGwAAANIAAAD/AAAA8AAA
+        AD0AAAAAAAAAXwAAABkAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA
+        AAAAAAChAAAA/wAAANcAAAAcAAAAAAAAAAYAAAAAAAAAGwAAAJwAAADtAAAA6gAAAJcAAADLAAAA/wAA
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAeQAA
+        AEkAAAAAAAAABAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAQAAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAEAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAgAAAAEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA//////////////+////9J//4Ghf/oYUn/spSE/0gBBP6QAAn9AAAV+oF
+        oJfQEkErxCgCI6hQBhXQkAkLkSAUiZEgJInQkEkLqGCKEcABFBPUAggr6gSQV+oIAK/0EABfyCAEv8hU
+        IX/kokT/6kgX/+i////8//////////////8=
+</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="&gt;&gt;qLDangNhapDataSet.Name" xml:space="preserve">
+    <value>qLDangNhapDataSet</value>
+  </data>
+  <data name="&gt;&gt;qLDangNhapDataSet.Type" xml:space="preserve">
+    <value>QlyBanHang.QLDangNhapDataSet, QLDangNhapDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;qLDangNhapDataSetBindingSource.Name" xml:space="preserve">
+    <value>qLDangNhapDataSetBindingSource</value>
+  </data>
+  <data name="&gt;&gt;qLDangNhapDataSetBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>home</value>

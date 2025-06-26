@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnDonHang = new System.Windows.Forms.Button();
@@ -41,11 +42,11 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.qLDangNhapDataSet = new QlyBanHang.QLDangNhapDataSet();
+            this.qLDangNhapDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDangNhapDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDangNhapDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSanPham
@@ -120,9 +121,10 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.Silver;
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnThoat.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnThoat, "btnThoat");
-            this.btnThoat.ForeColor = System.Drawing.Color.Red;
+            this.btnThoat.ForeColor = System.Drawing.Color.Black;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -135,54 +137,48 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.CausesValidation = false;
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.lblChucVu);
-            this.panel1.Controls.Add(this.btnDoanhThu);
-            this.panel1.Controls.Add(this.panelContent);
-            this.panel1.Controls.Add(this.btnSanPham);
             this.panel1.Controls.Add(this.lblTenNV);
-            this.panel1.Controls.Add(this.btnDonHang);
-            this.panel1.Controls.Add(this.btnKho);
-            this.panel1.Controls.Add(this.btnNCC);
-            this.panel1.Controls.Add(this.btnNhanVien);
-            this.panel1.Controls.Add(this.btnKhachHang);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // label1
+            // qLDangNhapDataSet
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            this.qLDangNhapDataSet.DataSetName = "QLDangNhapDataSet";
+            this.qLDangNhapDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // panel2
+            // qLDangNhapDataSetBindingSource
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            this.qLDangNhapDataSetBindingSource.DataSource = this.qLDangNhapDataSet;
+            this.qLDangNhapDataSetBindingSource.Position = 0;
             // 
             // home
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelContent);
+            this.Controls.Add(this.btnNCC);
+            this.Controls.Add(this.btnDoanhThu);
+            this.Controls.Add(this.btnKhachHang);
+            this.Controls.Add(this.btnNhanVien);
+            this.Controls.Add(this.btnSanPham);
+            this.Controls.Add(this.btnKho);
+            this.Controls.Add(this.btnDonHang);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "home";
-            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.home_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDangNhapDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDangNhapDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,8 +196,7 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.BindingSource qLDangNhapDataSetBindingSource;
+        private QLDangNhapDataSet qLDangNhapDataSet;
     }
 }

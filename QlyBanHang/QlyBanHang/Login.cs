@@ -21,7 +21,6 @@ namespace QlyBanHang
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,6 +35,16 @@ namespace QlyBanHang
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            if (txtTaiKhoan.Text == string.Empty)
+            {
+                MessageBox.Show("Hãy nhập tài khoản của bạn !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (txtMatKhau.Text == string.Empty)
+            {
+                MessageBox.Show("Hãy nhập mật khẩu của bạn !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             string user = txtTaiKhoan.Text.Trim();
             string pass = txtMatKhau.Text.Trim();
 
@@ -76,6 +85,20 @@ namespace QlyBanHang
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblEyeClose_Click(object sender, EventArgs e)
+        {
+            lblEyeClose.Visible = false;
+            lblEyeShow.Visible = true;
+            txtMatKhau.PasswordChar = '\0';
+        }
+
+        private void lblEyeShow_Click(object sender, EventArgs e)
+        {
+            lblEyeClose.Visible = true; 
+            lblEyeShow.Visible= false;
+            txtMatKhau.PasswordChar = '*';
         }
     }
 }

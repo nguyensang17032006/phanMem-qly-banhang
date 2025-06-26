@@ -38,6 +38,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblEyeShow = new System.Windows.Forms.Label();
+            this.lblEyeClose = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -46,22 +48,23 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(188, 232);
+            this.txtMatKhau.Location = new System.Drawing.Point(156, 232);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(215, 38);
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(220, 38);
             this.txtMatKhau.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Azure;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(22, 232);
+            this.label1.Location = new System.Drawing.Point(-6, 232);
             this.label1.Margin = new System.Windows.Forms.Padding(3);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.label1.Size = new System.Drawing.Size(151, 38);
+            this.label1.Size = new System.Drawing.Size(160, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mật khẩu";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -70,13 +73,13 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Azure;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(19, 168);
+            this.label2.Location = new System.Drawing.Point(-6, 163);
             this.label2.Margin = new System.Windows.Forms.Padding(3);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(3);
-            this.label2.Size = new System.Drawing.Size(154, 38);
+            this.label2.Size = new System.Drawing.Size(158, 40);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tài khoản";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -84,7 +87,7 @@
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(188, 168);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(156, 165);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(215, 38);
             this.txtTaiKhoan.TabIndex = 3;
@@ -94,7 +97,7 @@
             this.btnDangNhap.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnDangNhap.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(188, 297);
+            this.btnDangNhap.Location = new System.Drawing.Point(156, 295);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(155, 40);
             this.btnDangNhap.TabIndex = 4;
@@ -136,15 +139,40 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblEyeShow);
+            this.panel2.Controls.Add(this.lblEyeClose);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtTaiKhoan);
             this.panel2.Controls.Add(this.btnDangNhap);
             this.panel2.Controls.Add(this.txtMatKhau);
-            this.panel2.Location = new System.Drawing.Point(571, 1);
+            this.panel2.Location = new System.Drawing.Point(566, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(425, 532);
+            this.panel2.Size = new System.Drawing.Size(442, 532);
             this.panel2.TabIndex = 8;
+            // 
+            // lblEyeShow
+            // 
+            this.lblEyeShow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEyeShow.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEyeShow.Image = ((System.Drawing.Image)(resources.GetObject("lblEyeShow.Image")));
+            this.lblEyeShow.Location = new System.Drawing.Point(382, 232);
+            this.lblEyeShow.Name = "lblEyeShow";
+            this.lblEyeShow.Size = new System.Drawing.Size(57, 40);
+            this.lblEyeShow.TabIndex = 6;
+            this.lblEyeShow.Visible = false;
+            this.lblEyeShow.Click += new System.EventHandler(this.lblEyeShow_Click);
+            // 
+            // lblEyeClose
+            // 
+            this.lblEyeClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEyeClose.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEyeClose.Image = ((System.Drawing.Image)(resources.GetObject("lblEyeClose.Image")));
+            this.lblEyeClose.Location = new System.Drawing.Point(382, 232);
+            this.lblEyeClose.Name = "lblEyeClose";
+            this.lblEyeClose.Size = new System.Drawing.Size(57, 40);
+            this.lblEyeClose.TabIndex = 5;
+            this.lblEyeClose.Click += new System.EventHandler(this.lblEyeClose_Click);
             // 
             // Login
             // 
@@ -154,7 +182,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1008, 535);
+            this.ClientSize = new System.Drawing.Size(1008, 532);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -186,6 +214,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblEyeClose;
+        private System.Windows.Forms.Label lblEyeShow;
     }
 }
 
