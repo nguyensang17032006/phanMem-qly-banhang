@@ -45,6 +45,7 @@ namespace QlyBanHang
                 MessageBox.Show("Hãy nhập mật khẩu của bạn !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             string user = txtTaiKhoan.Text.Trim();
             string pass = txtMatKhau.Text.Trim();
 
@@ -53,34 +54,37 @@ namespace QlyBanHang
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-                string sql = "SELECT Quyen FROM TaiKhoan WHERE TenDangNhap=@user AND MatKhau=@pass";
+                string sql = "SELECT HoTenLot + ' ' + Ten AS HoTenDayDu, Quyen FROM NhanVien WHERE TK = @user AND MK = @pass";
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@user", user);
                     cmd.Parameters.AddWithValue("@pass", pass);
 
-                    var result = cmd.ExecuteScalar();
-
-                    if (result != null)
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        string quyen = result.ToString();
-                        MessageBox.Show("Đăng nhập thành công với quyền: " + quyen);
+                        if (reader.Read())
+                        {
+                            // Lưu vào class toàn cục
+                            TaiKhoan.HoTen = reader["HoTenDayDu"].ToString();
+                            TaiKhoan.Quyen = reader["Quyen"].ToString();
 
-                        // Mở form chính
-                        
-                        this.Hide();
-                        home home = new home();
-                        home.FormClosed += (s, args) => Application.Exit(); // Khi form Home đóng thì thoát app
-                        home.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                            MessageBox.Show("Đăng nhập thành công với quyền: " + TaiKhoan.Quyen);
+
+                            this.Hide();
+                            home home = new home();
+                            home.FormClosed += (s, args) => Application.Exit();
+                            home.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                        }
                     }
                 }
             }
         }
+
 
         private void label4_Click(object sender, EventArgs e)
         {

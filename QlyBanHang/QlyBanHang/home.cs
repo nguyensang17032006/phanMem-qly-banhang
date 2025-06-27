@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,7 +34,8 @@ namespace QlyBanHang
 
         private void home_Load(object sender, EventArgs e)
         {
-            
+            lblTenNV.Text = $"Họ và tên: {TaiKhoan.HoTen}";
+            lblChucVu.Text = "Chức vụ: " + TaiKhoan.Quyen;
         }
         protected override CreateParams CreateParams
         {

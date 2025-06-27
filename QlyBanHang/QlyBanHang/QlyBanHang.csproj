@@ -65,6 +65,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDangNhapDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TaiKhoan.cs" />
     <Compile Include="UC_DonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
