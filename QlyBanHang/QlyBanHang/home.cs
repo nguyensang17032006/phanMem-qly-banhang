@@ -34,6 +34,7 @@ namespace QlyBanHang
 
         private void home_Load(object sender, EventArgs e)
         {
+            LoadPage(new UC_SanPham());
             lblTenNV.Text = $"Họ và tên: {TaiKhoan.HoTen}";
             lblChucVu.Text = "Chức vụ: " + TaiKhoan.Quyen;
         }

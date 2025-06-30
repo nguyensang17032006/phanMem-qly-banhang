@@ -46,7 +46,7 @@
             // 
             this.groupBox2.Location = new System.Drawing.Point(640, 17);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(610, 241);
+            this.groupBox2.Size = new System.Drawing.Size(597, 241);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sản phẩm";
