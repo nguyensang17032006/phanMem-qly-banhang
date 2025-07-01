@@ -13,6 +13,11 @@ namespace QlyBanHang
 {
     public partial class UC_SanPham: UserControl
     {
+        SqlConnection kn =new SqlConnection("Data Source=DESKTOP-1417HQ2\\SQLEXPRESS02;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlDataAdapter adapter;
+        DataSet ds = new DataSet();
+        BindingSource bs = new BindingSource();
+
 
         public UC_SanPham()
         {
@@ -52,12 +57,18 @@ private void BoGocButton(Button btn, int doBo)
             // Gán vùng hiển thị
             btn.Region = new Region(path);
         }
-        
 
+        private void thucHienBindingSource()
+        {
+            adapter = new SqlDataAdapter("SElECT * FROM SANPHAM",kn);
+            adapter.Fill(ds);
+            bs.DataSource=ds.Tables[0];
+            dgvSanPham.DataSource = bs;
+        }
 
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
-
+            thucHienBindingSource();
         }
 
         private void btnThemSP_Resize(object sender, EventArgs e)
