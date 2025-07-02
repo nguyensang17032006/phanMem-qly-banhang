@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\",
+  "WorkspaceRootPath": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\uc_donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|c:\\users\\tran quoc khanh\\source\\repos\\phanmem-qly-banhang\\qlybanhang\\qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\uc_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\qlybanhang\\uc_donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\uc_donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\qlybanhang\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\qlybanhang\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|d:\\all\\doanqlybanhang\\qlybanhang\\qlybanhang\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\qlybanhang\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{267A0432-CC21-438A-B42A-778BFB9785E4}|QlyBanHang\\QlyBanHang.csproj|solutionrelative:qlybanhang\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\Login.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\Login.cs",
-              "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Login.cs",
+              "ToolTip": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\Login.cs",
               "RelativeToolTip": "QlyBanHang\\Login.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA+wDMAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwDMAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T03:52:27.993Z",
               "IsPinned": true,
@@ -56,7 +56,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -76,23 +80,31 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "UC_SanPham.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs",
+              "RelativeDocumentMoniker": "QlyBanHang\\UC_SanPham.cs",
+              "ToolTip": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs [Design]",
+              "RelativeToolTip": "QlyBanHang\\UC_SanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T09:16:49.204Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\Login.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\Login.cs",
-              "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\Login.cs [Design]",
+              "ToolTip": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\Login.cs [Design]",
               "RelativeToolTip": "QlyBanHang\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T10:35:59.708Z",
@@ -102,64 +114,47 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "UC_DonHang.cs",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\UC_DonHang.cs",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\UC_DonHang.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\UC_DonHang.cs",
-              "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\UC_DonHang.cs",
+              "ToolTip": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\UC_DonHang.cs",
               "RelativeToolTip": "QlyBanHang\\UC_DonHang.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAWwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:51:24.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T09:51:24.789Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "home.cs",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\home.cs",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\home.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\home.cs",
-              "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\home.cs",
+              "ToolTip": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\home.cs",
               "RelativeToolTip": "QlyBanHang\\home.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAtwCQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T07:05:44.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T07:05:44.385Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "home.cs [Design]",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\home.cs",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\home.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\home.cs",
               "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\home.cs [Design]",
-              "RelativeToolTip": "QlyBanHang\\home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T00:39:32.059Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-21T00:39:32.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_SanPham.cs [Design]",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs",
-              "RelativeDocumentMoniker": "QlyBanHang\\UC_SanPham.cs",
-              "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs [Design]",
-              "RelativeToolTip": "QlyBanHang\\UC_SanPham.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:16:49.204Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UC_SanPham.cs",
-              "DocumentMoniker": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs",
               "RelativeDocumentMoniker": "QlyBanHang\\UC_SanPham.cs",
-              "ToolTip": "D:\\ALL\\DoAnQlyBanHang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs",
+              "ToolTip": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\QlyBanHang\\QlyBanHang\\UC_SanPham.cs",
               "RelativeToolTip": "QlyBanHang\\UC_SanPham.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAhwEYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T08:33:14.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T08:33:14.153Z"
             }
           ]
         }

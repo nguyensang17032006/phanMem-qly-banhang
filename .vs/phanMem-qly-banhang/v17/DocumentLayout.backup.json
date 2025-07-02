@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\TRAN QUOC KHANH\\Source\\Repos\\phanMem-qly-banhang\\",
+  "WorkspaceRootPath": "C:\\Users\\TRAN QUOC KHANH\\source\\repos\\phanMem-qly-banhang\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -38,10 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }
