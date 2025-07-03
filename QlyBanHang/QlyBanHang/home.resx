@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSanPham.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btnDonHang.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDonHang.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="btnKhachHang.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -217,7 +217,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnKhachHang.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="btnKho.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -229,7 +229,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnKho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 470</value>
+    <value>0, 390</value>
   </data>
   <data name="btnKho.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 80</value>
@@ -250,7 +250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnKho.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="btnNhanVien.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -262,7 +262,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnNhanVien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 550</value>
+    <value>0, 470</value>
   </data>
   <data name="btnNhanVien.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 80</value>
@@ -283,7 +283,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNhanVien.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="btnNCC.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -295,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnNCC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 390</value>
+    <value>0, 310</value>
   </data>
   <data name="btnNCC.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 80</value>
@@ -317,39 +317,6 @@
   </data>
   <data name="&gt;&gt;btnNCC.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="btnDoanhThu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnDoanhThu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="btnDoanhThu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDoanhThu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 310</value>
-  </data>
-  <data name="btnDoanhThu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
-  </data>
-  <data name="btnDoanhThu.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnDoanhThu.Text" xml:space="preserve">
-    <value>Doanh thu</value>
-  </data>
-  <data name="&gt;&gt;btnDoanhThu.Name" xml:space="preserve">
-    <value>btnDoanhThu</value>
-  </data>
-  <data name="&gt;&gt;btnDoanhThu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDoanhThu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnDoanhThu.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="lblChucVu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -457,7 +424,7 @@
     <value>288, 70</value>
   </data>
   <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1296, 560</value>
+    <value>1296, 480</value>
   </data>
   <data name="panelContent.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -511,7 +478,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1583, 630</value>
+    <value>1583, 550</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

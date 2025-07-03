@@ -36,7 +36,6 @@
             this.btnKho = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnNCC = new System.Windows.Forms.Button();
-            this.btnDoanhThu = new System.Windows.Forms.Button();
             this.lblChucVu = new System.Windows.Forms.Label();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -100,15 +99,6 @@
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.UseVisualStyleBackColor = false;
             // 
-            // btnDoanhThu
-            // 
-            this.btnDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.btnDoanhThu, "btnDoanhThu");
-            this.btnDoanhThu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDoanhThu.Name = "btnDoanhThu";
-            this.btnDoanhThu.UseVisualStyleBackColor = false;
-            this.btnDoanhThu.Click += new System.EventHandler(this.button7_Click);
-            // 
             // lblChucVu
             // 
             resources.ApplyResources(this.lblChucVu, "lblChucVu");
@@ -121,7 +111,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnThoat.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnThoat, "btnThoat");
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
@@ -163,7 +153,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.btnNCC);
-            this.Controls.Add(this.btnDoanhThu);
             this.Controls.Add(this.btnKhachHang);
             this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.btnSanPham);
@@ -190,7 +179,6 @@
         private System.Windows.Forms.Button btnKho;
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnNCC;
-        private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.Label lblChucVu;
         private System.Windows.Forms.Label lblTenNV;
         private System.Windows.Forms.Button btnThoat;

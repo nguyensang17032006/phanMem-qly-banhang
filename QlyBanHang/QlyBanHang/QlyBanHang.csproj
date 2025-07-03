@@ -66,6 +66,12 @@
       <DependentUpon>QLDangNhapDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="TaiKhoan.cs" />
+    <Compile Include="TaoDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoDonHang.Designer.cs">
+      <DependentUpon>TaoDonHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_DonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="UC_KhachHang.Designer.cs">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NhanVien.Designer.cs">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_SanPham.cs">
       <SubType>UserControl</SubType>
@@ -100,11 +112,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TaoDonHang.resx">
+      <DependentUpon>TaoDonHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_DonHang.resx">
       <DependentUpon>UC_DonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NhanVien.resx">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_SanPham.resx">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
