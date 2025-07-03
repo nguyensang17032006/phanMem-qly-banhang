@@ -12,3 +12,5 @@ D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.pdb
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_DonHang.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_SanPham.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhachHang.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.TaoDonHang.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_NhanVien.resources

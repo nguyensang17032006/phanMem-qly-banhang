@@ -97,5 +97,10 @@ namespace QlyBanHang
         {
 
         }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            LoadPage(new UC_NhanVien());
+        }
     }
 }

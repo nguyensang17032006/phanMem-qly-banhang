@@ -90,6 +90,7 @@
             this.btnNhanVien.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btnNCC
             // 

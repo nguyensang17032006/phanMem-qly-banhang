@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btntimsp = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_KhachHang));
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.grb = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -51,44 +50,17 @@
             this.grb.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btntimsp
-            // 
-            this.btntimsp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btntimsp.FlatAppearance.BorderSize = 0;
-            this.btntimsp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntimsp.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimsp.Location = new System.Drawing.Point(259, 231);
-            this.btntimsp.Name = "btntimsp";
-            this.btntimsp.Size = new System.Drawing.Size(126, 38);
-            this.btntimsp.TabIndex = 25;
-            this.btntimsp.Text = "Tìm";
-            this.btntimsp.UseVisualStyleBackColor = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(18, 231);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 38);
-            this.textBox6.TabIndex = 24;
-            // 
             // dgvKhachHang
             // 
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Location = new System.Drawing.Point(18, 269);
+            resources.ApplyResources(this.dgvKhachHang, "dgvKhachHang");
             this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.RowHeadersWidth = 51;
             this.dgvKhachHang.RowTemplate.Height = 24;
-            this.dgvKhachHang.Size = new System.Drawing.Size(939, 286);
-            this.dgvKhachHang.TabIndex = 23;
             // 
             // grb
             // 
             this.grb.Controls.Add(this.textBox5);
             this.grb.Controls.Add(this.textBox4);
-            this.grb.Controls.Add(this.btnXoaSP);
-            this.grb.Controls.Add(this.btnSuaSP);
-            this.grb.Controls.Add(this.btnThemSP);
             this.grb.Controls.Add(this.textBox3);
             this.grb.Controls.Add(this.textBox2);
             this.grb.Controls.Add(this.label9);
@@ -99,173 +71,114 @@
             this.grb.Controls.Add(this.label2);
             this.grb.Controls.Add(this.label1);
             this.grb.Controls.Add(this.txtSanPham);
-            this.grb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grb.Location = new System.Drawing.Point(19, 3);
+            resources.ApplyResources(this.grb, "grb");
             this.grb.Name = "grb";
-            this.grb.Size = new System.Drawing.Size(939, 206);
-            this.grb.TabIndex = 22;
             this.grb.TabStop = false;
-            this.grb.Text = "Thông tin khách hàng";
             this.grb.Enter += new System.EventHandler(this.grb_Enter);
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(346, 126);
+            resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 28);
-            this.textBox5.TabIndex = 17;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(110, 132);
+            resources.ApplyResources(this.textBox4, "textBox4");
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 28);
-            this.textBox4.TabIndex = 16;
             // 
             // btnXoaSP
             // 
             this.btnXoaSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnXoaSP.FlatAppearance.BorderSize = 0;
-            this.btnXoaSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaSP.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaSP.Location = new System.Drawing.Point(795, 132);
+            resources.ApplyResources(this.btnXoaSP, "btnXoaSP");
             this.btnXoaSP.Name = "btnXoaSP";
-            this.btnXoaSP.Size = new System.Drawing.Size(126, 47);
-            this.btnXoaSP.TabIndex = 2;
-            this.btnXoaSP.Text = "Xóa KH";
             this.btnXoaSP.UseVisualStyleBackColor = false;
             // 
             // btnSuaSP
             // 
             this.btnSuaSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSuaSP.FlatAppearance.BorderSize = 0;
-            this.btnSuaSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuaSP.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaSP.Location = new System.Drawing.Point(795, 77);
+            resources.ApplyResources(this.btnSuaSP, "btnSuaSP");
             this.btnSuaSP.Name = "btnSuaSP";
-            this.btnSuaSP.Size = new System.Drawing.Size(126, 47);
-            this.btnSuaSP.TabIndex = 1;
-            this.btnSuaSP.Text = "Sửa KH";
             this.btnSuaSP.UseVisualStyleBackColor = false;
             // 
             // btnThemSP
             // 
             this.btnThemSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnThemSP.FlatAppearance.BorderSize = 0;
-            this.btnThemSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemSP.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSP.Location = new System.Drawing.Point(795, 17);
+            resources.ApplyResources(this.btnThemSP, "btnThemSP");
             this.btnThemSP.Name = "btnThemSP";
-            this.btnThemSP.Size = new System.Drawing.Size(126, 47);
-            this.btnThemSP.TabIndex = 0;
-            this.btnThemSP.Text = "Thêm KH";
             this.btnThemSP.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 83);
+            resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 28);
-            this.textBox3.TabIndex = 15;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(346, 83);
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 28);
-            this.textBox2.TabIndex = 14;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(17, 132);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 22);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "EMAIL";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(237, 132);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 22);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Giảm giá";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(237, 89);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 22);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Tổng chi";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 86);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 22);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "SĐT";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 33);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 28);
-            this.textBox1.TabIndex = 6;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(237, 39);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Tên KH";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 39);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 22);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Mã KH";
             // 
             // txtSanPham
             // 
-            this.txtSanPham.Location = new System.Drawing.Point(110, 36);
+            resources.ApplyResources(this.txtSanPham, "txtSanPham");
             this.txtSanPham.Name = "txtSanPham";
-            this.txtSanPham.Size = new System.Drawing.Size(121, 28);
-            this.txtSanPham.TabIndex = 3;
             // 
             // UC_KhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btntimsp);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.dgvKhachHang);
             this.Controls.Add(this.grb);
+            this.Controls.Add(this.btnXoaSP);
+            this.Controls.Add(this.btnThemSP);
+            this.Controls.Add(this.btnSuaSP);
             this.Name = "UC_KhachHang";
-            this.Size = new System.Drawing.Size(975, 594);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.grb.ResumeLayout(false);
             this.grb.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btntimsp;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.GroupBox grb;
         private System.Windows.Forms.TextBox textBox5;

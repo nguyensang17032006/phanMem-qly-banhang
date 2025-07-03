@@ -69,6 +69,9 @@ private void BoGocButton(Button btn, int doBo)
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
             thucHienBindingSource();
+            dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
         }
 
         private void btnThemSP_Resize(object sender, EventArgs e)
@@ -77,5 +80,22 @@ private void BoGocButton(Button btn, int doBo)
             BoGocButton(btnSuaSP, 20);
             BoGocButton(btnXoaSP, 20);
         }
-}
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            string filter = txtTimKiem.Text.Trim();
+            if (bs.DataSource is DataTable dt)
+            {
+                if (string.IsNullOrEmpty(filter))
+                {
+                    bs.RemoveFilter();
+                }
+                else
+                {
+                    // Ví dụ: tìm trong cột TenSanPham
+                    bs.Filter = $"TenSP LIKE '%{filter}%' OR MaSP LIKE '%{filter}%' OR Hang LIKE '%{filter}%' OR TheLoai LIKE '%{filter}%'";
+                }
+            }
+        }
+    }
 }
