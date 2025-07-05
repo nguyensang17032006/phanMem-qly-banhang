@@ -14,3 +14,22 @@ D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_SanPham.reso
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhachHang.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.TaoDonHang.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_NhanVien.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\bin\Debug\QlyBanHang.exe.config
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\bin\Debug\QlyBanHang.exe
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\bin\Debug\QlyBanHang.pdb
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.AssemblyReference.cache
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ChiTietNhapHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.home.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.Login.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.Properties.Resources.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.TaoDonHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_DonHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhachHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhoHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_NhaCungCap.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_NhanVien.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_SanPham.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.GenerateResource.cache
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.CoreCompileInputs.cache
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.exe
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.pdb

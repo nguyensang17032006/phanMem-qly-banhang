@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace QlyBanHang
 {
-    public partial class TaoDonHang : Form
+    public partial class UC_KhoHang : UserControl
     {
-        public TaoDonHang()
+        public UC_KhoHang()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
         }

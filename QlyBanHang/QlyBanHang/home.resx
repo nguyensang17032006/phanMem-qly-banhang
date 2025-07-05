@@ -132,7 +132,7 @@
     <value>0, 70</value>
   </data>
   <data name="btnSanPham.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
+    <value>288, 90</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSanPham.TabIndex" type="System.Int32, mscorlib">
@@ -163,10 +163,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnDonHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 150</value>
+    <value>0, 159</value>
   </data>
   <data name="btnDonHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
+    <value>288, 90</value>
   </data>
   <data name="btnDonHang.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -196,10 +196,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnKhachHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 230</value>
+    <value>0, 248</value>
   </data>
   <data name="btnKhachHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
+    <value>288, 90</value>
   </data>
   <data name="btnKhachHang.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -229,10 +229,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnKho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 390</value>
+    <value>0, 426</value>
   </data>
   <data name="btnKho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
+    <value>288, 90</value>
   </data>
   <data name="btnKho.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -262,10 +262,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnNhanVien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 470</value>
+    <value>0, 515</value>
   </data>
   <data name="btnNhanVien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
+    <value>288, 90</value>
   </data>
   <data name="btnNhanVien.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -295,10 +295,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnNCC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 310</value>
+    <value>0, 337</value>
   </data>
   <data name="btnNCC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 80</value>
+    <value>288, 90</value>
   </data>
   <data name="btnNCC.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -394,7 +394,7 @@
     <value>(none)</value>
   </data>
   <data name="btnThoat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1419, 7</value>
+    <value>1337, 7</value>
   </data>
   <data name="btnThoat.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 57</value>
@@ -421,10 +421,10 @@
     <value>0</value>
   </data>
   <data name="panelContent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 70</value>
+    <value>295, 70</value>
   </data>
   <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1293, 480</value>
+    <value>1155, 535</value>
   </data>
   <data name="panelContent.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -445,7 +445,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1581, 70</value>
+    <value>1450, 70</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -478,7 +478,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1583, 550</value>
+    <value>1452, 605</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
