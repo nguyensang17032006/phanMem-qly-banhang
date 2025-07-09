@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayNhap = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSanPham = new System.Windows.Forms.TextBox();
+            this.txtMaNhap = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvTTSP = new System.Windows.Forms.DataGridView();
             this.grb = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTTSP)).BeginInit();
             this.grb.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox7
+            // txtTotal
             // 
-            this.textBox7.Location = new System.Drawing.Point(519, 93);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(189, 28);
-            this.textBox7.TabIndex = 22;
+            this.txtTotal.Enabled = false;
+            this.txtTotal.Location = new System.Drawing.Point(519, 93);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(189, 28);
+            this.txtTotal.TabIndex = 22;
             // 
             // label6
             // 
@@ -60,12 +61,15 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Tổng tiền";
             // 
-            // dateTimePicker1
+            // dtpNgayNhap
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 93);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(208, 28);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dtpNgayNhap.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayNhap.Enabled = false;
+            this.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayNhap.Location = new System.Drawing.Point(174, 93);
+            this.dtpNgayNhap.Name = "dtpNgayNhap";
+            this.dtpNgayNhap.Size = new System.Drawing.Size(184, 28);
+            this.dtpNgayNhap.TabIndex = 18;
             // 
             // label9
             // 
@@ -85,16 +89,17 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Mã nhập hàng";
             // 
-            // txtSanPham
+            // txtMaNhap
             // 
-            this.txtSanPham.Location = new System.Drawing.Point(150, 36);
-            this.txtSanPham.Name = "txtSanPham";
-            this.txtSanPham.Size = new System.Drawing.Size(208, 28);
-            this.txtSanPham.TabIndex = 3;
+            this.txtMaNhap.Enabled = false;
+            this.txtMaNhap.Location = new System.Drawing.Point(174, 36);
+            this.txtMaNhap.Name = "txtMaNhap";
+            this.txtMaNhap.Size = new System.Drawing.Size(184, 28);
+            this.txtMaNhap.TabIndex = 3;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgvTTSP);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(21, 244);
             this.groupBox1.Name = "groupBox1";
@@ -103,26 +108,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sản phẩm";
             // 
-            // dataGridView1
+            // dgvTTSP
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 257);
-            this.dataGridView1.TabIndex = 33;
+            this.dgvTTSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTTSP.Location = new System.Drawing.Point(6, 46);
+            this.dgvTTSP.Name = "dgvTTSP";
+            this.dgvTTSP.RowHeadersWidth = 51;
+            this.dgvTTSP.RowTemplate.Height = 24;
+            this.dgvTTSP.Size = new System.Drawing.Size(731, 257);
+            this.dgvTTSP.TabIndex = 33;
             // 
             // grb
             // 
-            this.grb.Controls.Add(this.textBox1);
+            this.grb.Controls.Add(this.txtMaNCC);
             this.grb.Controls.Add(this.label2);
-            this.grb.Controls.Add(this.textBox7);
+            this.grb.Controls.Add(this.txtTotal);
             this.grb.Controls.Add(this.label6);
-            this.grb.Controls.Add(this.dateTimePicker1);
+            this.grb.Controls.Add(this.dtpNgayNhap);
             this.grb.Controls.Add(this.label9);
             this.grb.Controls.Add(this.label1);
-            this.grb.Controls.Add(this.txtSanPham);
+            this.grb.Controls.Add(this.txtMaNhap);
             this.grb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb.Location = new System.Drawing.Point(18, 6);
             this.grb.Name = "grb";
@@ -131,12 +136,13 @@
             this.grb.TabStop = false;
             this.grb.Text = "Chi tiết phiếu nhập";
             // 
-            // textBox1
+            // txtMaNCC
             // 
-            this.textBox1.Location = new System.Drawing.Point(519, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 28);
-            this.textBox1.TabIndex = 24;
+            this.txtMaNCC.Enabled = false;
+            this.txtMaNCC.Location = new System.Drawing.Point(519, 36);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(189, 28);
+            this.txtMaNCC.TabIndex = 24;
             // 
             // label2
             // 
@@ -156,8 +162,9 @@
             this.Controls.Add(this.grb);
             this.Name = "ChiTietNhapHang";
             this.Text = "ChiTietNhapHang";
+            this.Load += new System.EventHandler(this.ChiTietNhapHang_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTTSP)).EndInit();
             this.grb.ResumeLayout(false);
             this.grb.PerformLayout();
             this.ResumeLayout(false);
@@ -165,16 +172,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgayNhap;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSanPham;
+        private System.Windows.Forms.TextBox txtMaNhap;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTTSP;
         private System.Windows.Forms.GroupBox grb;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaNCC;
         private System.Windows.Forms.Label label2;
     }
 }

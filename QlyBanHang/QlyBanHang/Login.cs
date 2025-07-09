@@ -21,6 +21,7 @@ namespace QlyBanHang
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -99,10 +100,24 @@ namespace QlyBanHang
         }
 
         private void lblEyeShow_Click(object sender, EventArgs e)
-        {
+        {  
             lblEyeClose.Visible = true; 
             lblEyeShow.Visible= false;
             txtMatKhau.PasswordChar = '*';
+        }
+
+        private void txtTaiKhoan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTaiKhoan.Text == "Mật Khẩu")
+            {
+                txtTaiKhoan.Clear();
+            }    
+
         }
     }
 }

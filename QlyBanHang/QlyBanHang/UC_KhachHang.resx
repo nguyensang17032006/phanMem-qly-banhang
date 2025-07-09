@@ -143,259 +143,88 @@
   <data name="&gt;&gt;dgvKhachHang.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;txtSanPham.Name" xml:space="preserve">
-    <value>txtSanPham</value>
-  </data>
-  <data name="&gt;&gt;txtSanPham.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtSanPham.Parent" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;txtSanPham.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="grb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
-  </data>
-  <data name="grb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 7</value>
-  </data>
-  <data name="grb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>962, 168</value>
-  </data>
-  <data name="grb.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="grb.Text" xml:space="preserve">
-    <value>Thông tin khách hàng</value>
-  </data>
-  <data name="&gt;&gt;grb.Name" xml:space="preserve">
-    <value>grb</value>
-  </data>
-  <data name="&gt;&gt;grb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grb.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grb.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtHang.Location" type="System.Drawing.Point, System.Drawing">
     <value>664, 83</value>
   </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtHang.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtHang.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;txtHang.Name" xml:space="preserve">
+    <value>txtHang</value>
   </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtHang.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtHang.Parent" xml:space="preserve">
     <value>grb</value>
   </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtHang.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>664, 39</value>
   </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
   </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
+  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
+    <value>txtEmail</value>
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
     <value>grb</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtSDT.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 83</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtSDT.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 28</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtSDT.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;txtSDT.Name" xml:space="preserve">
+    <value>txtSDT</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtSDT.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtSDT.Parent" xml:space="preserve">
     <value>grb</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtSDT.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtChiTieu.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 83</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtChiTieu.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtChiTieu.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;txtChiTieu.Name" xml:space="preserve">
+    <value>txtChiTieu</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtChiTieu.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtChiTieu.Parent" xml:space="preserve">
     <value>grb</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtChiTieu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
@@ -439,13 +268,13 @@
     <value>555, 89</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
+    <value>90, 22</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Giảm giá</value>
+    <value>Hạng KH</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -519,25 +348,25 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtTenKH.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 33</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtTenKH.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtTenKH.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;txtTenKH.Name" xml:space="preserve">
+    <value>txtTenKH</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtTenKH.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtTenKH.Parent" xml:space="preserve">
     <value>grb</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtTenKH.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
@@ -600,26 +429,53 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="txtSanPham.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtKH.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 36</value>
   </data>
-  <data name="txtSanPham.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtKH.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 28</value>
   </data>
-  <data name="txtSanPham.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtKH.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;txtSanPham.Name" xml:space="preserve">
-    <value>txtSanPham</value>
+  <data name="&gt;&gt;txtKH.Name" xml:space="preserve">
+    <value>txtKH</value>
   </data>
-  <data name="&gt;&gt;txtSanPham.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtKH.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtSanPham.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtKH.Parent" xml:space="preserve">
     <value>grb</value>
   </data>
-  <data name="&gt;&gt;txtSanPham.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtKH.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="grb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="grb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 7</value>
+  </data>
+  <data name="grb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 168</value>
+  </data>
+  <data name="grb.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="grb.Text" xml:space="preserve">
+    <value>Thông tin khách hàng</value>
+  </data>
+  <data name="&gt;&gt;grb.Name" xml:space="preserve">
+    <value>grb</value>
+  </data>
+  <data name="&gt;&gt;grb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grb.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btnXoaSP.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -664,7 +520,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSuaSP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1024, 80</value>
+    <value>1024, 76</value>
   </data>
   <data name="btnSuaSP.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 47</value>
@@ -881,7 +737,7 @@
     <value>12, 195</value>
   </data>
   <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>414, 31</value>
+    <value>375, 27</value>
   </data>
   <data name="bindingNavigator1.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -916,6 +772,18 @@
   <data name="&gt;&gt;bindingNavigatorCountItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveFirstItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem.Name" xml:space="preserve">
+    <value>bindingNavigatorMovePreviousItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;bindingNavigatorSeparator.Name" xml:space="preserve">
     <value>bindingNavigatorSeparator</value>
   </data>
@@ -934,30 +802,6 @@
   <data name="&gt;&gt;bindingNavigatorSeparator1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bindingNavigatorSeparator2.Name" xml:space="preserve">
-    <value>bindingNavigatorSeparator2</value>
-  </data>
-  <data name="&gt;&gt;bindingNavigatorSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
-    <value>toolStripTextBox1</value>
-  </data>
-  <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingNavigatorMoveFirstItem.Name" xml:space="preserve">
-    <value>bindingNavigatorMoveFirstItem</value>
-  </data>
-  <data name="&gt;&gt;bindingNavigatorMoveFirstItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingNavigatorMovePreviousItem.Name" xml:space="preserve">
-    <value>bindingNavigatorMovePreviousItem</value>
-  </data>
-  <data name="&gt;&gt;bindingNavigatorMovePreviousItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;bindingNavigatorMoveNextItem.Name" xml:space="preserve">
     <value>bindingNavigatorMoveNextItem</value>
   </data>
@@ -970,11 +814,23 @@
   <data name="&gt;&gt;bindingNavigatorMoveLastItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator2.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator2</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripButton1.Name" xml:space="preserve">
     <value>toolStripButton1</value>
   </data>
   <data name="&gt;&gt;toolStripButton1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
+    <value>toolStripTextBox1</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UC_KhachHang</value>

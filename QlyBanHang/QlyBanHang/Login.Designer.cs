@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,14 +45,15 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtMatKhau
+            // txtTaiKhoan
             // 
-            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(156, 232);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(220, 38);
-            this.txtMatKhau.TabIndex = 0;
+            this.txtTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTaiKhoan.ForeColor = System.Drawing.Color.Silver;
+            this.txtTaiKhoan.Location = new System.Drawing.Point(156, 165);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(220, 38);
+            this.txtTaiKhoan.TabIndex = 0;
+            this.txtTaiKhoan.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
             // 
             // label1
             // 
@@ -84,13 +85,16 @@
             this.label2.Text = "Tài khoản";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtTaiKhoan
+            // txtMatKhau
             // 
-            this.txtTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(156, 165);
-            this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(215, 38);
-            this.txtTaiKhoan.TabIndex = 3;
+            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.ForeColor = System.Drawing.Color.Silver;
+            this.txtMatKhau.Location = new System.Drawing.Point(156, 234);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(215, 38);
+            this.txtMatKhau.TabIndex = 3;
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtTaiKhoan_TextChanged);
             // 
             // btnDangNhap
             // 
@@ -143,9 +147,9 @@
             this.panel2.Controls.Add(this.lblEyeClose);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtTaiKhoan);
-            this.panel2.Controls.Add(this.btnDangNhap);
             this.panel2.Controls.Add(this.txtMatKhau);
+            this.panel2.Controls.Add(this.btnDangNhap);
+            this.panel2.Controls.Add(this.txtTaiKhoan);
             this.panel2.Location = new System.Drawing.Point(566, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(442, 532);
@@ -205,10 +209,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTaiKhoan;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

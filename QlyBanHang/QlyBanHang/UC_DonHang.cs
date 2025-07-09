@@ -21,5 +21,18 @@ namespace QlyBanHang
         {
 
         }
+
+        private void btnThemSP_Click(object sender, EventArgs e)
+        { 
+           TaoDonHang taoDonHang = new TaoDonHang();
+            taoDonHang.ShowDialog();
+                
+        }
+        
+
+        private void UC_DonHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

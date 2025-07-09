@@ -102,5 +102,15 @@ namespace QlyBanHang
         {
             LoadPage(new UC_NhanVien());
         }
+
+        private void btnNCC_Click(object sender, EventArgs e)
+        {
+            LoadPage(new UC_NhaCungCap());
+        }
+
+        private void btnKho_Click(object sender, EventArgs e)
+        {
+            LoadPage(new UC_KhoHang());
+        }
     }
 }

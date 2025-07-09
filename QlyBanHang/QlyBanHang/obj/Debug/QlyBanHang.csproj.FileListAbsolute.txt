@@ -33,3 +33,8 @@ C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\
 C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.csproj.CoreCompileInputs.cache
 C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.exe
 C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.pdb
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ChiTietDonHang.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ChiTietNhapHang.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.NhapHang.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhoHang.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_NhaCungCap.resources

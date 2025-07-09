@@ -22,17 +22,7 @@ namespace QlyBanHang
         public UC_SanPham()
         {
             InitializeComponent();
-            btnThemSP.Resize += (s, e) => {
-                BoGocButton(btnThemSP, 20);
-            };
-            btnXoaSP.Resize += (s, e) =>
-            {
-                BoGocButton(btnThemSP, 20);
-            };
-            btnSuaSP.Resize += (s, e) =>
-            {
-                BoGocButton(btnSuaSP, 20);
-            };
+            
         }
         
 
@@ -42,28 +32,32 @@ namespace QlyBanHang
         }
         
 
-private void BoGocButton(Button btn, int doBo)
-    {
-            GraphicsPath path = new GraphicsPath();
-            int r = doBo;
-
-            // Tạo vùng bo góc
-            path.AddArc(0, 0, r, r, 180, 90);
-            path.AddArc(btn.Width - r, 0, r, r, 270, 90);
-            path.AddArc(btn.Width - r, btn.Height - r, r, r, 0, 90);
-            path.AddArc(0, btn.Height - r, r, r, 90, 90);
-            path.CloseAllFigures();
-
-            // Gán vùng hiển thị
-            btn.Region = new Region(path);
-        }
-
         private void thucHienBindingSource()
         {
-            adapter = new SqlDataAdapter("SElECT * FROM SANPHAM",kn);
+            adapter = new SqlDataAdapter("SELECT * from SanPham", kn);
             adapter.Fill(ds);
             bs.DataSource=ds.Tables[0];
             dgvSanPham.DataSource = bs;
+
+            txtMaSP.DataBindings.Clear();
+            txtMaSP.DataBindings.Add("Text", bs, "MaSP", true, DataSourceUpdateMode.Never);
+
+            txtSoLuong.DataBindings.Clear();
+            txtSoLuong.DataBindings.Add("Text", bs, "SoLuongTon", true, DataSourceUpdateMode.Never);
+
+            txtTenSP.DataBindings.Clear();
+            txtTenSP.DataBindings.Add("Text", bs, "TenSP", true, DataSourceUpdateMode.Never);
+
+            txtHang.DataBindings.Clear();
+            txtHang.DataBindings.Add("Text", bs, "Hang", true, DataSourceUpdateMode.Never);
+
+            txtGiaBan.DataBindings.Clear();
+            txtGiaBan.DataBindings.Add("Text", bs, "GiaBan", true, DataSourceUpdateMode.Never);
+
+            txtTheLoai.DataBindings.Clear();
+            txtTheLoai.DataBindings.Add("Text", bs, "TheLoai", true, DataSourceUpdateMode.Never);
+
+            bindingNavigator1.BindingSource = bs;
         }
 
         private void UC_SanPham_Load(object sender, EventArgs e)
@@ -74,28 +68,122 @@ private void BoGocButton(Button btn, int doBo)
 
         }
 
-        private void btnThemSP_Resize(object sender, EventArgs e)
-        {
-            BoGocButton(btnThemSP, 20); // hoặc bo nhiều hơn nếu muốn tròn
-            BoGocButton(btnSuaSP, 20);
-            BoGocButton(btnXoaSP, 20);
-        }
-
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            string filter = txtTimKiem.Text.Trim();
+            string timkiem = txtTimKiem.Text.Trim();
             if (bs.DataSource is DataTable dt)
             {
-                if (string.IsNullOrEmpty(filter))
+                if (string.IsNullOrEmpty(timkiem))
                 {
                     bs.RemoveFilter();
                 }
                 else
                 {
                     // Ví dụ: tìm trong cột TenSanPham
-                    bs.Filter = $"TenSP LIKE '%{filter}%' OR MaSP LIKE '%{filter}%' OR Hang LIKE '%{filter}%' OR TheLoai LIKE '%{filter}%'";
+                    bs.Filter = $"TenSP LIKE '%{timkiem}%' OR MaSP LIKE '%{timkiem}%' OR Hang LIKE '%{timkiem}%' OR TheLoai LIKE '%{timkiem}%'";
                 }
             }
         }
+
+        private void dgvSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSuaSP_Click(object sender, EventArgs e)
+        {
+            string maSP = txtMaSP.Text.Trim();
+            string tenSP = txtTenSP.Text.Trim();
+            string hang = txtHang.Text.Trim();
+            string theLoai = txtTheLoai.Text.Trim();
+            decimal giaBan;
+            int soLuong;
+
+            if (!decimal.TryParse(txtGiaBan.Text, out giaBan) || !int.TryParse(txtSoLuong.Text, out soLuong))
+            {
+                MessageBox.Show("Giá bán hoặc số lượng không hợp lệ!");
+                return;
+            }
+
+            string query = @"UPDATE SanPham 
+                     SET TenSP = @TenSP, Hang = @Hang, TheLoai = @TheLoai, GiaBan = @GiaBan, SoLuongTon = @SoLuongTon
+                     WHERE MaSP = @MaSP";
+
+            using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TenSP", tenSP);
+                cmd.Parameters.AddWithValue("@Hang", hang);
+                cmd.Parameters.AddWithValue("@TheLoai", theLoai);
+                cmd.Parameters.AddWithValue("@GiaBan", giaBan);
+                cmd.Parameters.AddWithValue("@SoLuongTon", soLuong);
+                cmd.Parameters.AddWithValue("@MaSP", maSP);
+
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                conn.Close();
+
+                if (rows > 0)
+                {
+                    MessageBox.Show("Cập nhật thành công!");
+                    RefreshSanPham();
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy sản phẩm cần cập nhật.");
+                }
+            }
+
+        }
+        private void RefreshSanPham()
+        {
+            ds.Clear(); // Xoá dữ liệu cũ
+            thucHienBindingSource(); // Load lại
+        }
+
+        private void btnXoaSP_Click(object sender, EventArgs e)
+        {
+            string maSP = txtMaSP.Text.Trim();
+
+            if (string.IsNullOrEmpty(maSP))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa.");
+                return;
+            }
+
+            // Xác nhận xóa
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes) return;
+
+            string query = "DELETE FROM SanPham WHERE MaSP = @MaSP";
+
+            using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaSP", maSP);
+
+                try
+                {
+                    conn.Open();
+                    int rows = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    if (rows > 0)
+                    {
+                        MessageBox.Show("Xóa sản phẩm thành công!");
+                        RefreshSanPham(); // Load lại dữ liệu sau khi xóa
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy sản phẩm cần xóa.");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi khi xóa sản phẩm: " + ex.Message);
+                }
+            }
+        }
+
     }
 }

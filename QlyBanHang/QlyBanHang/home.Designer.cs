@@ -82,6 +82,7 @@
             this.btnKho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnKho.Name = "btnKho";
             this.btnKho.UseVisualStyleBackColor = false;
+            this.btnKho.Click += new System.EventHandler(this.btnKho_Click);
             // 
             // btnNhanVien
             // 
@@ -99,6 +100,7 @@
             this.btnNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.UseVisualStyleBackColor = false;
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
             // lblChucVu
             // 
