@@ -104,6 +104,27 @@ namespace QlyBanHang
                 MessageBox.Show("Giá bán hoặc số lượng không hợp lệ!");
                 return;
             }
+            
+            DataRowView row = (DataRowView)bs.Current;
+            if (row != null)
+            {
+                string oldTenSP = row["TenSP"].ToString();
+                string oldHang = row["Hang"].ToString();
+                string oldTheLoai = row["TheLoai"].ToString();
+                decimal oldGiaBan = Convert.ToDecimal(row["GiaBan"]);
+                int oldSoLuong = Convert.ToInt32(row["SoLuongTon"]);
+
+                // 🔄 So sánh dữ liệu
+                if (tenSP == oldTenSP &&
+                    hang == oldHang &&
+                    theLoai == oldTheLoai &&
+                    giaBan == oldGiaBan &&
+                    soLuong == oldSoLuong)
+                {
+                    MessageBox.Show("Bạn chưa thay đổi thông tin nào để cập nhật.");
+                    return;
+                }
+            }
 
             string query = @"UPDATE SanPham 
                      SET TenSP = @TenSP, Hang = @Hang, TheLoai = @TheLoai, GiaBan = @GiaBan, SoLuongTon = @SoLuongTon
@@ -140,49 +161,86 @@ namespace QlyBanHang
             ds.Clear(); // Xoá dữ liệu cũ
             thucHienBindingSource(); // Load lại
         }
-
-        private void btnXoaSP_Click(object sender, EventArgs e)
+        private void XoaSanPham(string maSP)
         {
-            string maSP = txtMaSP.Text.Trim();
-
             if (string.IsNullOrEmpty(maSP))
             {
                 MessageBox.Show("Vui lòng chọn sản phẩm cần xóa.");
                 return;
             }
 
-            // Xác nhận xóa
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result != DialogResult.Yes) return;
-
-            string query = "DELETE FROM SanPham WHERE MaSP = @MaSP";
-
             using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
             {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaSP", maSP);
+                conn.Open();
 
-                try
+                // Kiểm tra sản phẩm có trong ChiTietDonHang hoặc ChiTietNhap không
+                string checkQuery = @"
+            SELECT COUNT(*) FROM ChiTietDonHang WHERE MaSP = @MaSP;
+            SELECT COUNT(*) FROM ChiTietNhap WHERE MaSP = @MaSP;";
+
+                SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                checkCmd.Parameters.AddWithValue("@MaSP", maSP);
+
+                int countDonHang = 0;
+                int countNhap = 0;
+
+                using (SqlDataReader reader = checkCmd.ExecuteReader())
                 {
-                    conn.Open();
-                    int rows = cmd.ExecuteNonQuery();
-                    conn.Close();
+                    if (reader.Read())
+                        countDonHang = reader.GetInt32(0);
 
-                    if (rows > 0)
-                    {
-                        MessageBox.Show("Xóa sản phẩm thành công!");
-                        RefreshSanPham(); // Load lại dữ liệu sau khi xóa
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không tìm thấy sản phẩm cần xóa.");
-                    }
+                    if (reader.NextResult() && reader.Read())
+                        countNhap = reader.GetInt32(0);
                 }
-                catch (SqlException ex)
+
+                // Nếu có dữ liệu liên quan thì cảnh báo
+                if (countDonHang > 0 || countNhap > 0)
                 {
-                    MessageBox.Show("Lỗi khi xóa sản phẩm: " + ex.Message);
+                    DialogResult warning = MessageBox.Show(
+                        "Sản phẩm này đã được dùng trong đơn hàng hoặc nhập hàng.\n" +
+                        "Nếu tiếp tục, tất cả dữ liệu liên quan sẽ bị xóa.\nBạn có chắc chắn muốn xóa không?",
+                        "Cảnh báo xóa dữ liệu",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning);
+
+                    if (warning != DialogResult.Yes)
+                    {
+                        conn.Close();
+                        return;
+                    }
+
+                    // Xóa dữ liệu liên quan trước
+                    SqlCommand deleteDetails = new SqlCommand(@"
+                DELETE FROM ChiTietDonHang WHERE MaSP = @MaSP;
+                DELETE FROM ChiTietNhap WHERE MaSP = @MaSP;", conn);
+                    deleteDetails.Parameters.AddWithValue("@MaSP", maSP);
+                    deleteDetails.ExecuteNonQuery();
+                }
+
+                // Xóa sản phẩm
+                SqlCommand deleteSP = new SqlCommand("DELETE FROM SanPham WHERE MaSP = @MaSP", conn);
+                deleteSP.Parameters.AddWithValue("@MaSP", maSP);
+                int rows = deleteSP.ExecuteNonQuery();
+
+                conn.Close();
+
+                if (rows > 0)
+                {
+                    MessageBox.Show("Xóa sản phẩm thành công!");
+                    RefreshSanPham(); // Load lại dữ liệu nếu có
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy sản phẩm để xóa.");
                 }
             }
+        }
+
+
+        private void btnXoaSP_Click(object sender, EventArgs e)
+        {
+            string maSP = txtMaSP.Text.Trim();
+            XoaSanPham(maSP);
         }
 
     }

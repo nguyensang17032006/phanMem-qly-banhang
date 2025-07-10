@@ -31,13 +31,13 @@ namespace QlyBanHang
             dgvNCC.DataSource = bs;
             dgvNCC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             txtEmail.DataBindings.Clear();
-            txtEmail.DataBindings.Add("Text", bs, "Email", true);
+            txtEmail.DataBindings.Add("Text", bs, "Email", true,DataSourceUpdateMode.Never);
             txtMaNCC.DataBindings.Clear();
-            txtMaNCC.DataBindings.Add("Text", bs, "MaNCC", true);
+            txtMaNCC.DataBindings.Add("Text", bs, "MaNCC", true, DataSourceUpdateMode.Never);
             txtSDT.DataBindings.Clear();
             txtTenNCC.DataBindings.Clear();
-            txtSDT.DataBindings.Add("Text", bs, "SDT", true);
-            txtTenNCC.DataBindings.Add("Text", bs, "TenNCC", true);
+            txtSDT.DataBindings.Add("Text", bs, "SDT", true, DataSourceUpdateMode.Never);
+            txtTenNCC.DataBindings.Add("Text", bs, "TenNCC", true, DataSourceUpdateMode.Never);
             bindingNavigator1.BindingSource = bs;
 
         }

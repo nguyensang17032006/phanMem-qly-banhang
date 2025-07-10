@@ -30,24 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_DonHang));
-            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.dgvDonHang = new System.Windows.Forms.DataGridView();
             this.grb = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dtpNgayMua = new System.Windows.Forms.DateTimePicker();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtHinhThuc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSanPham = new System.Windows.Forms.TextBox();
+            this.txtMaDon = new System.Windows.Forms.TextBox();
             this.btnXoaSP = new System.Windows.Forms.Button();
             this.btnSuaSP = new System.Windows.Forms.Button();
             this.btnThemSP = new System.Windows.Forms.Button();
@@ -63,40 +63,41 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnTimKiem = new System.Windows.Forms.ToolStripButton();
             this.txtTimKiem = new System.Windows.Forms.ToolStripTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).BeginInit();
             this.grb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvKhachHang
+            // dgvDonHang
             // 
-            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Location = new System.Drawing.Point(12, 225);
-            this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.RowTemplate.Height = 24;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1134, 307);
-            this.dgvKhachHang.TabIndex = 27;
+            this.dgvDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDonHang.Location = new System.Drawing.Point(12, 225);
+            this.dgvDonHang.Name = "dgvDonHang";
+            this.dgvDonHang.RowHeadersWidth = 51;
+            this.dgvDonHang.RowTemplate.Height = 24;
+            this.dgvDonHang.Size = new System.Drawing.Size(1134, 307);
+            this.dgvDonHang.TabIndex = 27;
+            this.dgvDonHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellContentClick);
             // 
             // grb
             // 
-            this.grb.Controls.Add(this.textBox4);
-            this.grb.Controls.Add(this.textBox2);
-            this.grb.Controls.Add(this.textBox1);
-            this.grb.Controls.Add(this.textBox7);
+            this.grb.Controls.Add(this.txtMaKH);
+            this.grb.Controls.Add(this.txtSDT);
+            this.grb.Controls.Add(this.txtMaNV);
+            this.grb.Controls.Add(this.txtTongTien);
             this.grb.Controls.Add(this.label6);
             this.grb.Controls.Add(this.label3);
-            this.grb.Controls.Add(this.dateTimePicker1);
-            this.grb.Controls.Add(this.textBox5);
-            this.grb.Controls.Add(this.textBox3);
+            this.grb.Controls.Add(this.dtpNgayMua);
+            this.grb.Controls.Add(this.txtDiaChi);
+            this.grb.Controls.Add(this.txtHinhThuc);
             this.grb.Controls.Add(this.label9);
             this.grb.Controls.Add(this.label8);
             this.grb.Controls.Add(this.label5);
             this.grb.Controls.Add(this.label4);
             this.grb.Controls.Add(this.label2);
             this.grb.Controls.Add(this.label1);
-            this.grb.Controls.Add(this.txtSanPham);
+            this.grb.Controls.Add(this.txtMaDon);
             this.grb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb.Location = new System.Drawing.Point(12, 3);
             this.grb.Name = "grb";
@@ -105,33 +106,33 @@
             this.grb.TabStop = false;
             this.grb.Text = "Thông tin đơn hàng ";
             // 
-            // textBox4
+            // txtMaKH
             // 
-            this.textBox4.Location = new System.Drawing.Point(740, 38);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(186, 28);
-            this.textBox4.TabIndex = 25;
+            this.txtMaKH.Location = new System.Drawing.Point(740, 38);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(186, 28);
+            this.txtMaKH.TabIndex = 25;
             // 
-            // textBox2
+            // txtSDT
             // 
-            this.textBox2.Location = new System.Drawing.Point(416, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 28);
-            this.textBox2.TabIndex = 24;
+            this.txtSDT.Location = new System.Drawing.Point(416, 83);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(162, 28);
+            this.txtSDT.TabIndex = 24;
             // 
-            // textBox1
+            // txtMaNV
             // 
-            this.textBox1.Location = new System.Drawing.Point(416, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 28);
-            this.textBox1.TabIndex = 23;
+            this.txtMaNV.Location = new System.Drawing.Point(416, 36);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(162, 28);
+            this.txtMaNV.TabIndex = 23;
             // 
-            // textBox7
+            // txtTongTien
             // 
-            this.textBox7.Location = new System.Drawing.Point(740, 129);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(186, 28);
-            this.textBox7.TabIndex = 22;
+            this.txtTongTien.Location = new System.Drawing.Point(740, 129);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(186, 28);
+            this.txtTongTien.TabIndex = 22;
             // 
             // label6
             // 
@@ -151,26 +152,28 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Hình thức";
             // 
-            // dateTimePicker1
+            // dtpNgayMua
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(740, 81);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(186, 28);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dtpNgayMua.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayMua.Location = new System.Drawing.Point(740, 81);
+            this.dtpNgayMua.Name = "dtpNgayMua";
+            this.dtpNgayMua.Size = new System.Drawing.Size(186, 28);
+            this.dtpNgayMua.TabIndex = 18;
             // 
-            // textBox5
+            // txtDiaChi
             // 
-            this.textBox5.Location = new System.Drawing.Point(115, 132);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(463, 28);
-            this.textBox5.TabIndex = 17;
+            this.txtDiaChi.Location = new System.Drawing.Point(115, 132);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(463, 28);
+            this.txtDiaChi.TabIndex = 17;
             // 
-            // textBox3
+            // txtHinhThuc
             // 
-            this.textBox3.Location = new System.Drawing.Point(115, 83);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 28);
-            this.textBox3.TabIndex = 15;
+            this.txtHinhThuc.Location = new System.Drawing.Point(115, 83);
+            this.txtHinhThuc.Name = "txtHinhThuc";
+            this.txtHinhThuc.Size = new System.Drawing.Size(162, 28);
+            this.txtHinhThuc.TabIndex = 15;
             // 
             // label9
             // 
@@ -226,12 +229,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Mã đơn";
             // 
-            // txtSanPham
+            // txtMaDon
             // 
-            this.txtSanPham.Location = new System.Drawing.Point(115, 36);
-            this.txtSanPham.Name = "txtSanPham";
-            this.txtSanPham.Size = new System.Drawing.Size(162, 28);
-            this.txtSanPham.TabIndex = 3;
+            this.txtMaDon.Location = new System.Drawing.Point(115, 36);
+            this.txtMaDon.Name = "txtMaDon";
+            this.txtMaDon.Size = new System.Drawing.Size(162, 28);
+            this.txtMaDon.TabIndex = 3;
             // 
             // btnXoaSP
             // 
@@ -258,6 +261,7 @@
             this.btnSuaSP.TabIndex = 1;
             this.btnSuaSP.Text = "Chi tiết đơn hàng";
             this.btnSuaSP.UseVisualStyleBackColor = false;
+            this.btnSuaSP.Click += new System.EventHandler(this.btnSuaSP_Click);
             // 
             // btnThemSP
             // 
@@ -299,14 +303,14 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(375, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(375, 27);
             this.bindingNavigator1.TabIndex = 37;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -316,7 +320,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -325,13 +329,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -346,7 +350,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -354,7 +358,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -363,13 +367,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btnTimKiem
             // 
@@ -377,14 +381,14 @@
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(29, 28);
+            this.btnTimKiem.Size = new System.Drawing.Size(29, 24);
             this.btnTimKiem.Text = "toolStripButton1";
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(100, 31);
+            this.txtTimKiem.Size = new System.Drawing.Size(100, 27);
             // 
             // UC_DonHang
             // 
@@ -392,7 +396,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(this.dgvKhachHang);
+            this.Controls.Add(this.dgvDonHang);
             this.Controls.Add(this.grb);
             this.Controls.Add(this.btnThemSP);
             this.Controls.Add(this.btnSuaSP);
@@ -400,7 +404,7 @@
             this.Name = "UC_DonHang";
             this.Size = new System.Drawing.Size(1155, 535);
             this.Load += new System.EventHandler(this.UC_DonHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).EndInit();
             this.grb.ResumeLayout(false);
             this.grb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
@@ -412,24 +416,24 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.DataGridView dgvDonHang;
         private System.Windows.Forms.GroupBox grb;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Button btnXoaSP;
         private System.Windows.Forms.Button btnSuaSP;
         private System.Windows.Forms.Button btnThemSP;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtHinhThuc;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSanPham;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtMaDon;
+        private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgayMua;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -442,8 +446,8 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton btnTimKiem;
         private System.Windows.Forms.ToolStripTextBox txtTimKiem;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaKH;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtMaNV;
     }
 }
