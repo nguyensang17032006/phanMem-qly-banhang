@@ -38,3 +38,8 @@ D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ChiTietNhapHang
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.NhapHang.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_KhoHang.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.UC_NhaCungCap.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ChiTietDonHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.NhapHang.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemSanPham.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNhaCungCap.resources
+C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNV.resources

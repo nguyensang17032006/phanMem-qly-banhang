@@ -13,7 +13,7 @@ namespace QlyBanHang
 {
     public partial class ChiTietNhapHang : Form
     {
-        SqlConnection kn =new SqlConnection("Data Source=DESKTOP-1417HQ2\\SQLEXPRESS02;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn =new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
         SqlDataAdapter adapter;
         DataSet ds =new DataSet();
         BindingSource bs = new BindingSource();
@@ -32,7 +32,9 @@ namespace QlyBanHang
             bs.DataSource = ds.Tables[0];
             dgvTTSP.DataSource = bs;
             dgvTTSP.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill;
-            SqlDataAdapter ad = new SqlDataAdapter("select * from PhieuNhap",kn);
+            SqlDataAdapter ad = new SqlDataAdapter("SELECT * FROM PhieuNhap WHERE MaNhap = @MaNhap", kn);
+            ad.SelectCommand.Parameters.AddWithValue("@MaNhap", maNhapHang);
+
             DataSet ds2 = new DataSet();
             BindingSource bs2 =new BindingSource();
             ad.Fill(ds2);

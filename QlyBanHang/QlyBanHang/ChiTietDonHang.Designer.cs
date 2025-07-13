@@ -31,6 +31,7 @@
             this.dgvTTSP = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grb = new System.Windows.Forms.GroupBox();
+            this.txtHinhThuc = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaDon = new System.Windows.Forms.TextBox();
-            this.txtHinhThuc = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTTSP)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grb.SuspendLayout();
@@ -98,6 +98,13 @@
             this.grb.TabIndex = 31;
             this.grb.TabStop = false;
             this.grb.Text = "Chi tiết đơn hàng ";
+            // 
+            // txtHinhThuc
+            // 
+            this.txtHinhThuc.Location = new System.Drawing.Point(554, 100);
+            this.txtHinhThuc.Name = "txtHinhThuc";
+            this.txtHinhThuc.Size = new System.Drawing.Size(189, 28);
+            this.txtHinhThuc.TabIndex = 23;
             // 
             // txtDiaChi
             // 
@@ -223,13 +230,6 @@
             this.txtMaDon.Size = new System.Drawing.Size(208, 28);
             this.txtMaDon.TabIndex = 3;
             // 
-            // txtHinhThuc
-            // 
-            this.txtHinhThuc.Location = new System.Drawing.Point(554, 100);
-            this.txtHinhThuc.Name = "txtHinhThuc";
-            this.txtHinhThuc.Size = new System.Drawing.Size(189, 28);
-            this.txtHinhThuc.TabIndex = 23;
-            // 
             // ChiTietDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -239,7 +239,7 @@
             this.Controls.Add(this.grb);
             this.Name = "ChiTietDonHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChiTietDonHang";
+            this.Text = "Chi tiết đơn hàng";
             this.Load += new System.EventHandler(this.ChiTietDonHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTTSP)).EndInit();
             this.groupBox1.ResumeLayout(false);

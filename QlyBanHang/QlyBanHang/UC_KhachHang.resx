@@ -144,7 +144,7 @@
     <value>1</value>
   </data>
   <data name="txtHang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>664, 83</value>
+    <value>727, 83</value>
   </data>
   <data name="txtHang.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
@@ -165,7 +165,7 @@
     <value>0</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>664, 39</value>
+    <value>727, 39</value>
   </data>
   <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
@@ -189,7 +189,7 @@
     <value>110, 83</value>
   </data>
   <data name="txtSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 28</value>
+    <value>158, 28</value>
   </data>
   <data name="txtSDT.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -207,7 +207,7 @@
     <value>2</value>
   </data>
   <data name="txtChiTieu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 83</value>
+    <value>409, 83</value>
   </data>
   <data name="txtChiTieu.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
@@ -235,7 +235,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 39</value>
+    <value>618, 39</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 22</value>
@@ -265,7 +265,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 89</value>
+    <value>618, 89</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 22</value>
@@ -295,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 86</value>
+    <value>300, 86</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 22</value>
@@ -349,7 +349,7 @@
     <value>7</value>
   </data>
   <data name="txtTenKH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 33</value>
+    <value>409, 33</value>
   </data>
   <data name="txtTenKH.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 28</value>
@@ -376,7 +376,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 39</value>
+    <value>300, 39</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 22</value>
@@ -433,7 +433,7 @@
     <value>110, 36</value>
   </data>
   <data name="txtKH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 28</value>
+    <value>158, 28</value>
   </data>
   <data name="txtKH.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -580,7 +580,7 @@
     <value>17, 17</value>
   </metadata>
   <data name="bindingNavigatorCountItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 24</value>
+    <value>45, 28</value>
   </data>
   <data name="bindingNavigatorCountItem.Text" xml:space="preserve">
     <value>of {0}</value>
@@ -606,7 +606,7 @@
     <value>True</value>
   </data>
   <data name="bindingNavigatorMoveFirstItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+    <value>29, 28</value>
   </data>
   <data name="bindingNavigatorMoveFirstItem.Text" xml:space="preserve">
     <value>Move first</value>
@@ -624,13 +624,13 @@
     <value>True</value>
   </data>
   <data name="bindingNavigatorMovePreviousItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+    <value>29, 28</value>
   </data>
   <data name="bindingNavigatorMovePreviousItem.Text" xml:space="preserve">
     <value>Move previous</value>
   </data>
   <data name="bindingNavigatorSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 27</value>
+    <value>6, 31</value>
   </data>
   <data name="bindingNavigatorPositionItem.AccessibleName" xml:space="preserve">
     <value>Position</value>
@@ -651,7 +651,7 @@
     <value>Current position</value>
   </data>
   <data name="bindingNavigatorSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 27</value>
+    <value>6, 31</value>
   </data>
   <data name="bindingNavigatorMoveNextItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -666,7 +666,7 @@
     <value>True</value>
   </data>
   <data name="bindingNavigatorMoveNextItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+    <value>29, 28</value>
   </data>
   <data name="bindingNavigatorMoveNextItem.Text" xml:space="preserve">
     <value>Move next</value>
@@ -686,13 +686,13 @@
     <value>True</value>
   </data>
   <data name="bindingNavigatorMoveLastItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+    <value>29, 28</value>
   </data>
   <data name="bindingNavigatorMoveLastItem.Text" xml:space="preserve">
     <value>Move last</value>
   </data>
   <data name="bindingNavigatorSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 27</value>
+    <value>6, 31</value>
   </data>
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -722,7 +722,7 @@
     <value>Magenta</value>
   </data>
   <data name="toolStripButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+    <value>29, 28</value>
   </data>
   <data name="toolStripButton1.Text" xml:space="preserve">
     <value>toolStripButton1</value>
@@ -731,13 +731,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="toolStripTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
+    <value>100, 31</value>
   </data>
   <data name="bindingNavigator1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 195</value>
   </data>
   <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 27</value>
+    <value>375, 31</value>
   </data>
   <data name="bindingNavigator1.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>

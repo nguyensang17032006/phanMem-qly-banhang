@@ -161,7 +161,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grb);
             this.Name = "ChiTietNhapHang";
-            this.Text = "ChiTietNhapHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chi tiết nhập hàng";
             this.Load += new System.EventHandler(this.ChiTietNhapHang_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTTSP)).EndInit();

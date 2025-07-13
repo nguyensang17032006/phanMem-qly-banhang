@@ -14,7 +14,7 @@ namespace QlyBanHang
     public partial class ChiTietDonHang : Form
     {
         string MaDon;
-        SqlConnection kn = new SqlConnection("Data Source=DESKTOP-1417HQ2\\SQLEXPRESS02;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
         SqlDataAdapter adapter;
         DataSet ds = new DataSet();
         BindingSource bs = new BindingSource();
@@ -32,8 +32,10 @@ namespace QlyBanHang
             bs.DataSource=ds.Tables[0];
             dgvTTSP.DataSource = bs;
             dgvTTSP.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            SqlDataAdapter ad = new SqlDataAdapter("select * from DonHang", kn);
-            DataSet ds2= new DataSet();
+            SqlDataAdapter ad = new SqlDataAdapter("SELECT * FROM DonHang WHERE MaDon = @MaDon", kn);
+            ad.SelectCommand.Parameters.AddWithValue("@MaDon", MaDon);
+
+            DataSet ds2 = new DataSet();
             BindingSource bs2=new BindingSource();
             ad.Fill(ds2);
             bs2.DataSource=ds2.Tables[0];

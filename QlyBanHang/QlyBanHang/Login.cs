@@ -50,7 +50,7 @@ namespace QlyBanHang
             string user = txtTaiKhoan.Text.Trim();
             string pass = txtMatKhau.Text.Trim();
 
-            string connStr = "Data Source=DESKTOP-1417HQ2\\SQLEXPRESS02;Initial Catalog=QLBanHang;Integrated Security=True";
+            string connStr = "Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
