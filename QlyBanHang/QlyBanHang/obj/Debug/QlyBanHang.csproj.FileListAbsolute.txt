@@ -43,3 +43,7 @@ C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\
 C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemSanPham.resources
 C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNhaCungCap.resources
 C:\Users\TRAN QUOC KHANH\Source\Repos\phanMem-qly-banhang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNV.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNhaCungCap.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNV.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemSanPham.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemKH.resources

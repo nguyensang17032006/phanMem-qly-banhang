@@ -50,9 +50,8 @@ namespace QlyBanHang
             string user = txtTaiKhoan.Text.Trim();
             string pass = txtMatKhau.Text.Trim();
 
-            string connStr = "Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True";
 
-            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlConnection conn = SqlCon.GetConnection())
             {
                 conn.Open();
                 string sql = "SELECT HoTenLot + ' ' + Ten AS HoTenDayDu, Quyen FROM NhanVien WHERE TK = @user AND MK = @pass";

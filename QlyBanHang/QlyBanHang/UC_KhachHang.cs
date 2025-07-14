@@ -13,7 +13,7 @@ namespace QlyBanHang
 {
     public partial class UC_KhachHang: UserControl
     {
-        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = SqlCon.GetConnection();
         SqlDataAdapter adapter;
         DataSet ds = new DataSet();
         BindingSource bs = new BindingSource();
@@ -48,5 +48,135 @@ namespace QlyBanHang
             txtTenKH.DataBindings.Clear();
             txtTenKH.DataBindings.Add("Text",bs,"TenKH",true,DataSourceUpdateMode.Never);
         }
+
+        private void btnThemSP_Click(object sender, EventArgs e)
+        {
+            ThemKH themKH = new ThemKH();
+            if (themKH.ShowDialog() == DialogResult.OK)
+            {
+                ds.Clear();
+                adapter.Fill(ds);
+            }
+        }
+
+        private void btnSuaSP_Click(object sender, EventArgs e)
+        {
+            // Lấy thông tin từ các TextBox
+            string maKH = txtKH.Text.Trim();
+            string tenKH = txtTenKH.Text.Trim();
+            string sdt = txtSDT.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string thuHang = txtHang.Text.Trim();
+
+            // Kiểm tra đầu vào
+            if (string.IsNullOrEmpty(maKH))
+            {
+                MessageBox.Show("Vui lòng chọn khách hàng cần sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                kn.Open();
+                string sql = @"UPDATE KhachHang 
+                       SET TenKH = @TenKH, SDT = @SDT, Email = @Email
+                       WHERE MaKhachHang = @MaKH";
+                SqlCommand cmd = new SqlCommand(sql, kn);
+                cmd.Parameters.AddWithValue("@TenKH", tenKH);
+                cmd.Parameters.AddWithValue("@SDT", sdt);
+                cmd.Parameters.AddWithValue("@Email", email);
+                cmd.Parameters.AddWithValue("@MaKH", maKH);
+
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    MessageBox.Show("Cập nhật thông tin khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ds.Clear();
+                    adapter.Fill(ds); // Load lại dữ liệu sau khi sửa
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy khách hàng để cập nhật.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi cập nhật khách hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                kn.Close();
+            }
+        }
+
+        private void btnXoaSP_Click(object sender, EventArgs e)
+        {
+            string maKH = txtKH.Text.Trim();
+
+            if (string.IsNullOrEmpty(maKH))
+            {
+                MessageBox.Show("Vui lòng chọn khách hàng cần xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Cảnh báo đầu tiên: mất hạng thành viên
+            DialogResult warning = MessageBox.Show(
+                "⚠️ Việc xóa khách hàng sẽ làm mất toàn bộ thông tin, bao gồm cả hạng thành viên.\nBạn có chắc chắn muốn tiếp tục không?",
+                "Cảnh báo quan trọng",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (warning == DialogResult.No)
+                return;
+
+            // Xác nhận xóa lần 2
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn xóa khách hàng này?",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.No)
+                return;
+
+            try
+            {
+                kn.Open();
+
+                string sql = "DELETE FROM KhachHang WHERE MaKhachHang = @MaKH";
+                SqlCommand cmd = new SqlCommand(sql, kn);
+                cmd.Parameters.AddWithValue("@MaKH", maKH);
+
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    MessageBox.Show("Xóa khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ds.Clear();
+                    adapter.Fill(ds); // Load lại dữ liệu
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy khách hàng để xóa.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (SqlException ex)
+            {
+                if (ex.Number == 547) // Lỗi ràng buộc FK
+                {
+                    MessageBox.Show("Không thể xóa khách hàng do có liên kết với dữ liệu khác.", "Lỗi ràng buộc", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi khi xóa khách hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            finally
+            {
+                kn.Close();
+            }
+        }
+
     }
 }

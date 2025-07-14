@@ -12,53 +12,61 @@ using System.Windows.Forms;
 
 namespace QlyBanHang
 {
-    public partial class ThemNhaCungCap : Form
+    public partial class ThemKH : Form
     {
         SqlConnection conn = SqlCon.GetConnection();
-        public ThemNhaCungCap()
+        public ThemKH()
         {
             InitializeComponent();
         }
 
-        private void ThemNCC_Load(object sender, EventArgs e)
+        private void ThemKH_Load(object sender, EventArgs e)
         {
-            txtMaNCC.Text = TaoMaNCCTuDong();
+            
         }
-        private string TaoMaNCCTuDong()
+        private string TaoMaKHTuDong()
         {
             try
             {
                 conn.Open();
-                string query = "SELECT TOP 1 MaNCC FROM NhaCungCap ORDER BY MaNCC DESC";
+                string query = "SELECT TOP 1 MaKhachHang FROM KhachHang ORDER BY MaKhachHang DESC";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 object result = cmd.ExecuteScalar();
                 conn.Close();
 
                 if (result != null)
                 {
-                    string maCuoi = result.ToString().Replace("NCC", "");
+                    string maCuoi = result.ToString().Replace("KH0", "");
                     int so = int.Parse(maCuoi);
-                    return "NCC" + (so + 1).ToString("D2");
+                    return "KH0" + (so + 1).ToString("D2");
                 }
                 else
                 {
-                    return "NCC01";
+                    return "KH001";
                 }
             }
             catch
             {
                 conn.Close();
-                return "NCC01";
+                return "KH001";
             }
         }
         
 
-        private void btnThemSP_Click(object sender, EventArgs e)
+        
+
+        private void ThemNhaCungCap_Load(object sender, EventArgs e)
         {
-            string ma = txtMaNCC.Text.Trim();
-            string ten = txtTenNCC.Text.Trim();
-            string sdt = txtSDT.Text.Trim();
-            string email = txtEmail.Text.Trim();
+            txtMaKH.Text = TaoMaKHTuDong();
+            
+        }
+
+        private void btnThemKH_Click_1(object sender, EventArgs e)
+        {
+            string ma = txtMaKH.Text.Trim();
+            string ten = txtTenKH.Text.Trim();
+            string sdt = txtSDTKH.Text.Trim();
+            string email = txtEmailKH.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(ten) || string.IsNullOrWhiteSpace(sdt) || string.IsNullOrWhiteSpace(email))
             {
@@ -73,13 +81,13 @@ namespace QlyBanHang
                 return;
             }
 
-            DialogResult confirm = MessageBox.Show("Bạn có chắc muốn thêm nhà cung cấp này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult confirm = MessageBox.Show("Bạn có chắc muốn thêm khách hàng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm != DialogResult.Yes) return;
 
             try
             {
                 conn.Open();
-                string insert = @"INSERT INTO NhaCungCap (MaNCC, TenNCC, SDT, Email)
+                string insert = @"INSERT INTO KhachHang (MaKhachHang, TenKH, SDT, Email)
                                   VALUES (@Ma, @Ten, @SDT, @Email)";
                 SqlCommand cmd = new SqlCommand(insert, conn);
                 cmd.Parameters.AddWithValue("@Ma", ma);
@@ -92,13 +100,13 @@ namespace QlyBanHang
 
                 if (rows > 0)
                 {
-                    MessageBox.Show("Thêm nhà cung cấp thành công!");
-                    this.DialogResult = DialogResult.OK; // để UC_NhaCungCap biết cần load lại
+                    MessageBox.Show("Thêm khách hàng thành công!");
+                    this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Không thể thêm nhà cung cấp. Vui lòng thử lại.");
+                    MessageBox.Show("Không thể thêm khách hàng. Vui lòng thử lại.");
                 }
             }
             catch (Exception ex)

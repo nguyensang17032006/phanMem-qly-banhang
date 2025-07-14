@@ -13,7 +13,7 @@ namespace QlyBanHang
 {
     public partial class UC_NhaCungCap : UserControl
     {
-        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection conn = SqlCon.GetConnection();
         SqlDataAdapter adapter;
         DataSet ds=new DataSet();
         BindingSource bs=new BindingSource();

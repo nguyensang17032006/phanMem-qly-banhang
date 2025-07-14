@@ -13,7 +13,7 @@ namespace QlyBanHang
 {
     public partial class ThemNV : Form
     {
-        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = SqlCon.GetConnection();
         public ThemNV()
         {
             InitializeComponent();

@@ -83,12 +83,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDangNhapDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SqlCon.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="TaoDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TaoDonHang.Designer.cs">
       <DependentUpon>TaoDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKH.Designer.cs">
+      <DependentUpon>ThemKH.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemNCC.cs">
       <SubType>Form</SubType>
@@ -171,6 +178,9 @@
     </Compile>
     <EmbeddedResource Include="TaoDonHang.resx">
       <DependentUpon>TaoDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKH.resx">
+      <DependentUpon>ThemKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNCC.resx">
       <DependentUpon>ThemNCC.cs</DependentUpon>

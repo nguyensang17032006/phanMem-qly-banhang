@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaoDonHang));
             this.grb = new System.Windows.Forms.GroupBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.cmbMaNV = new System.Windows.Forms.ComboBox();
             this.cmbMaKH = new System.Windows.Forms.ComboBox();
             this.cmbHinhThuc = new System.Windows.Forms.ComboBox();
@@ -59,8 +61,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.qLDangNhapDataSet = new QlyBanHang.QLDangNhapDataSet();
             this.qLDangNhapDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.grb.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
@@ -93,6 +93,22 @@
             this.grb.TabIndex = 27;
             this.grb.TabStop = false;
             this.grb.Text = "Thông tin đơn hàng ";
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(483, 126);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(189, 28);
+            this.txtDiaChi.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(374, 132);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 22);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Địa chỉ";
             // 
             // cmbMaNV
             // 
@@ -146,6 +162,8 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(127, 131);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(208, 28);
@@ -153,6 +171,7 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.Enabled = false;
             this.txtSDT.Location = new System.Drawing.Point(483, 83);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(189, 28);
@@ -341,22 +360,6 @@
             // 
             this.qLDangNhapDataSetBindingSource.DataSource = this.qLDangNhapDataSet;
             this.qLDangNhapDataSetBindingSource.Position = 0;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(483, 126);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(189, 28);
-            this.txtDiaChi.TabIndex = 27;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(374, 132);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 22);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Địa chỉ";
             // 
             // TaoDonHang
             // 

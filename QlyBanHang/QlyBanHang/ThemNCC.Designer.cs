@@ -118,11 +118,11 @@
             // 
             // btnThemSP
             // 
-            this.btnThemSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnThemSP.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnThemSP.FlatAppearance.BorderSize = 0;
             this.btnThemSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemSP.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSP.Location = new System.Drawing.Point(265, 198);
+            this.btnThemSP.Location = new System.Drawing.Point(307, 142);
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Size = new System.Drawing.Size(196, 47);
             this.btnThemSP.TabIndex = 35;
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 325);
+            this.ClientSize = new System.Drawing.Size(811, 211);
             this.Controls.Add(this.btnThemSP);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSDT);

@@ -13,7 +13,7 @@ namespace QlyBanHang
 {
     public partial class NhapHang : Form
     {
-        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = SqlCon.GetConnection();
         public NhapHang()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace QlyBanHang
         {
             txtMaNhap.Text = TaoMaPhieuNhapTuDong();
             dtpNgayNhap.Value = DateTime.Now;
-
+            dgvNhap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             LoadMaNCC();
             LoadMaSP();
             TaoBangTamNhap();
@@ -33,7 +33,7 @@ namespace QlyBanHang
         {
             string maMoi = "PN001";
 
-            using (SqlConnection conn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True"))
+            using (SqlConnection conn = SqlCon.GetConnection())
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("SELECT MAX(MaNhap) FROM PhieuNhap WHERE MaNhap LIKE 'PN%'", conn);

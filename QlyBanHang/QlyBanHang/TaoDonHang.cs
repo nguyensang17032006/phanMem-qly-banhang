@@ -14,7 +14,7 @@ namespace QlyBanHang
 {
     public partial class TaoDonHang : Form
     {
-        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = SqlCon.GetConnection();
         private UC_DonHang ucParent;
         public TaoDonHang(UC_DonHang parent)
         {
@@ -38,7 +38,7 @@ namespace QlyBanHang
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT MaSP FROM SanPham", kn);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-
+            dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             cmbMaSP.DataSource = dt;
             cmbMaSP.DisplayMember = "MaSP";
             cmbMaSP.ValueMember = "MaSP";
@@ -59,7 +59,7 @@ namespace QlyBanHang
         }
         private void LoadMaSP()
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True"))
+            using (SqlConnection conn = SqlCon.GetConnection())
             {
                 string query = "SELECT MaSP, TenSP FROM SanPham";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
@@ -80,7 +80,7 @@ namespace QlyBanHang
 
             string maSP = cmbMaSP.SelectedValue.ToString();
 
-            using (SqlConnection conn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True"))
+            using (SqlConnection conn = SqlCon.GetConnection())
             {
                 string query = "SELECT TenSP, GiaBan FROM SanPham WHERE MaSP = @MaSP";
                 SqlCommand cmd = new SqlCommand(query, conn);

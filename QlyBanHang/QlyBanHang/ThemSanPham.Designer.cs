@@ -146,6 +146,7 @@
             this.cmbNhaCungCap.Name = "cmbNhaCungCap";
             this.cmbNhaCungCap.Size = new System.Drawing.Size(226, 28);
             this.cmbNhaCungCap.TabIndex = 35;
+            this.cmbNhaCungCap.SelectedIndexChanged += new System.EventHandler(this.cmbNhaCungCap_SelectedIndexChanged);
             // 
             // ThemSanPham
             // 

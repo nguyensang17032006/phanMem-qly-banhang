@@ -222,6 +222,8 @@
             // 
             // dtpNgayNhap
             // 
+            this.dtpNgayNhap.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayNhap.Location = new System.Drawing.Point(461, 39);
             this.dtpNgayNhap.Name = "dtpNgayNhap";
             this.dtpNgayNhap.Size = new System.Drawing.Size(222, 28);

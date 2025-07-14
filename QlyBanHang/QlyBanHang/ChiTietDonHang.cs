@@ -14,7 +14,7 @@ namespace QlyBanHang
     public partial class ChiTietDonHang : Form
     {
         string MaDon;
-        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = SqlCon.GetConnection();
         SqlDataAdapter adapter;
         DataSet ds = new DataSet();
         BindingSource bs = new BindingSource();

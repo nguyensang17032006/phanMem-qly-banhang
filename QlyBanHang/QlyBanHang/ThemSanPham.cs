@@ -13,7 +13,7 @@ namespace QlyBanHang
 {
     public partial class ThemSanPham : Form
     {
-        SqlConnection kn = new SqlConnection("Data Source=LAPTOP-TQK\\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True");
+        SqlConnection kn = SqlCon.GetConnection();
         public ThemSanPham()
         {
             InitializeComponent();
@@ -118,6 +118,11 @@ namespace QlyBanHang
 
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbNhaCungCap_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

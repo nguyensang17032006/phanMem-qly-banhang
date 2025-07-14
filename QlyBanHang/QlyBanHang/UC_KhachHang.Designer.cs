@@ -158,6 +158,7 @@
             resources.ApplyResources(this.btnXoaSP, "btnXoaSP");
             this.btnXoaSP.Name = "btnXoaSP";
             this.btnXoaSP.UseVisualStyleBackColor = false;
+            this.btnXoaSP.Click += new System.EventHandler(this.btnXoaSP_Click);
             // 
             // btnSuaSP
             // 
@@ -166,6 +167,7 @@
             resources.ApplyResources(this.btnSuaSP, "btnSuaSP");
             this.btnSuaSP.Name = "btnSuaSP";
             this.btnSuaSP.UseVisualStyleBackColor = false;
+            this.btnSuaSP.Click += new System.EventHandler(this.btnSuaSP_Click);
             // 
             // btnThemSP
             // 
@@ -174,6 +176,7 @@
             resources.ApplyResources(this.btnThemSP, "btnThemSP");
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.UseVisualStyleBackColor = false;
+            this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
             // 
             // bindingNavigator1
             // 
