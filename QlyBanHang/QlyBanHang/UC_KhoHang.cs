@@ -59,6 +59,17 @@ namespace QlyBanHang
 
         private void btnXoaSP_Click(object sender, EventArgs e)
         {
+            if (TaiKhoan.Quyen != "admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
+
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             if (dgvTTNhap.CurrentRow == null)
             {
                 MessageBox.Show("Vui lòng chọn phiếu nhập cần xóa!");

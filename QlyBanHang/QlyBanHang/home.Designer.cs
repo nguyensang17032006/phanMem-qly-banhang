@@ -114,7 +114,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnThoat.BackColor = System.Drawing.Color.Red;
             this.btnThoat.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnThoat, "btnThoat");
             this.btnThoat.ForeColor = System.Drawing.Color.Black;

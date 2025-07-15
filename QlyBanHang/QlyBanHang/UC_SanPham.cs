@@ -98,7 +98,17 @@ namespace QlyBanHang
             string theLoai = txtTheLoai.Text.Trim();
             decimal giaBan;
             int soLuong;
+            if (TaiKhoan.Quyen != "Admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
 
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             if (!decimal.TryParse(txtGiaBan.Text, out giaBan) || !int.TryParse(txtSoLuong.Text, out soLuong))
             {
                 MessageBox.Show("Giá bán hoặc số lượng không hợp lệ!");
@@ -239,6 +249,17 @@ namespace QlyBanHang
 
         private void btnXoaSP_Click(object sender, EventArgs e)
         {
+            if (TaiKhoan.Quyen != "Admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
+
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             string maSP = txtMaSP.Text.Trim();
             XoaSanPham(maSP);
         }
@@ -247,11 +268,29 @@ namespace QlyBanHang
         {
 
         }
+        private void LoadDanhSachSanPham()
+        {
+            using (SqlConnection conn = SqlCon.GetConnection())
+            {
+                string query = "SELECT * FROM SanPham";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvSanPham.DataSource = dt;
+            }
+        }
 
         private void btnThemSP_Click(object sender, EventArgs e)
         {
-            ThemSanPham themSPForm = new ThemSanPham();
-            themSPForm.ShowDialog();
+            ThemSanPham frm = new ThemSanPham();
+            DialogResult result = frm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                // Gọi lại hàm load dữ liệu để reset DataGridView
+                LoadDanhSachSanPham();
+            }
         }
+        
     }
 }

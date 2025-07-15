@@ -71,22 +71,23 @@
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 29);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 26);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 29);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // txtSoLuong
             // 
+            this.txtSoLuong.Enabled = false;
             this.txtSoLuong.Location = new System.Drawing.Point(102, 83);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(105, 28);
@@ -95,7 +96,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(237, 86);
+            this.label9.Location = new System.Drawing.Point(655, 86);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 22);
             this.label9.TabIndex = 13;
@@ -104,7 +105,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(643, 86);
+            this.label8.Location = new System.Drawing.Point(643, 39);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 22);
             this.label8.TabIndex = 12;
@@ -113,7 +114,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(643, 39);
+            this.label5.Location = new System.Drawing.Point(237, 86);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 22);
             this.label5.TabIndex = 9;
@@ -140,7 +141,7 @@
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 29);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -180,7 +181,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(449, 29);
+            this.bindingNavigator1.Size = new System.Drawing.Size(410, 31);
             this.bindingNavigator1.TabIndex = 36;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -190,7 +191,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -199,7 +200,7 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorMoveNextItem
@@ -208,7 +209,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -217,7 +218,7 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // toolStripButton1
@@ -226,7 +227,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 26);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton1.Text = "Add new";
             // 
             // btnTimKiem
@@ -235,7 +236,7 @@
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(29, 26);
+            this.btnTimKiem.Size = new System.Drawing.Size(29, 28);
             this.btnTimKiem.Text = "toolStripButton1";
             this.btnTimKiem.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -243,12 +244,12 @@
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(100, 29);
+            this.txtTimKiem.Size = new System.Drawing.Size(100, 31);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 29);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // label1
             // 
@@ -273,6 +274,7 @@
             // 
             // txtMaSP
             // 
+            this.txtMaSP.Enabled = false;
             this.txtMaSP.Location = new System.Drawing.Point(102, 36);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.ReadOnly = true;
@@ -346,23 +348,24 @@
             // 
             // txtTheLoai
             // 
-            this.txtTheLoai.Location = new System.Drawing.Point(741, 83);
+            this.txtTheLoai.Location = new System.Drawing.Point(742, 36);
             this.txtTheLoai.Name = "txtTheLoai";
             this.txtTheLoai.Size = new System.Drawing.Size(229, 28);
             this.txtTheLoai.TabIndex = 21;
             // 
             // txtHang
             // 
-            this.txtHang.Location = new System.Drawing.Point(741, 36);
+            this.txtHang.Enabled = false;
+            this.txtHang.Location = new System.Drawing.Point(333, 86);
             this.txtHang.Name = "txtHang";
-            this.txtHang.Size = new System.Drawing.Size(229, 28);
+            this.txtHang.Size = new System.Drawing.Size(293, 28);
             this.txtHang.TabIndex = 20;
             // 
             // txtGiaBan
             // 
-            this.txtGiaBan.Location = new System.Drawing.Point(333, 83);
+            this.txtGiaBan.Location = new System.Drawing.Point(742, 86);
             this.txtGiaBan.Name = "txtGiaBan";
-            this.txtGiaBan.Size = new System.Drawing.Size(293, 28);
+            this.txtGiaBan.Size = new System.Drawing.Size(229, 28);
             this.txtGiaBan.TabIndex = 19;
             // 
             // txtTenSP

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietNhapHang));
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpNgayNhap = new System.Windows.Forms.DateTimePicker();
@@ -160,6 +161,7 @@
             this.ClientSize = new System.Drawing.Size(782, 559);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grb);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChiTietNhapHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết nhập hàng";

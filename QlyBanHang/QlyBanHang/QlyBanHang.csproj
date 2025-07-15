@@ -58,6 +58,12 @@
     <Compile Include="ChiTietNhapHang.Designer.cs">
       <DependentUpon>ChiTietNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormXacNhanAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXacNhanAdmin.Designer.cs">
+      <DependentUpon>FormXacNhanAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTietNhapHang.resx">
       <DependentUpon>ChiTietNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXacNhanAdmin.resx">
+      <DependentUpon>FormXacNhanAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>

@@ -82,7 +82,7 @@ namespace QlyBanHang
 
             using (SqlConnection conn = SqlCon.GetConnection())
             {
-                string query = "SELECT TenSP, GiaBan FROM SanPham WHERE MaSP = @MaSP";
+                string query = "SELECT TenSP, GiaBan,SoLuongTon FROM SanPham WHERE MaSP = @MaSP";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaSP", maSP);
 
@@ -90,8 +90,8 @@ namespace QlyBanHang
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    txtTenSP.Text = reader["TenSP"].ToString(); 
-
+                    txtTenSP.Text = reader["TenSP"].ToString();
+                    txtSLT.Text = reader["SoLuongTon"].ToString();
                     txtGiaBan.Text = reader["GiaBan"].ToString();
                 }
                 conn.Close();
@@ -159,15 +159,39 @@ namespace QlyBanHang
                     return;
                 }
             }
+            if (cmbHinhThuc.SelectedItem != null && cmbHinhThuc.SelectedItem.ToString() == "Online"
+    && string.IsNullOrWhiteSpace(txtDiaChi.Text))
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ khi chọn hình thức Online.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtDiaChi.Focus(); // Đưa con trỏ về ô nhập địa chỉ
+                return; // Ngăn tiếp tục xử lý nếu đang trong sự kiện
+            }
 
-            DialogResult confirm = MessageBox.Show("Bạn có chắc chắn muốn thêm sản phẩm này vào đơn hàng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirm != DialogResult.Yes) return;
+            bool daTonTai = false;
+            foreach (DataRow dataRow in dtSanPhamTam.Rows)
+            {
+                if(dataRow["MaSP"].ToString()==maSP)
+                {
+                    DialogResult confirm = MessageBox.Show("Bạn có chắc chắn muốn thêm sản phẩm này vào đơn hàng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (confirm != DialogResult.Yes) return;
+                    int slCu = Convert.ToInt32(dataRow["SoLuong"]);
+                    daTonTai = true;
+                    dataRow["SoLuong"] = slCu + soLuong;
+                    dataRow["GiaBan"] = giaBan;
+                    dataRow["ThanhTien"]= (slCu+soLuong)*giaBan;
+                    break;
+                }    
+            }
+            if (!daTonTai)
+            {
+                DialogResult confirm = MessageBox.Show("Bạn có chắc chắn muốn thêm sản phẩm này vào đơn hàng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirm != DialogResult.Yes) return;
 
-            decimal thanhTien = soLuong * giaBan;
+                decimal thanhTien = soLuong * giaBan;
 
-            // Thêm vào bảng tạm
-            dtSanPhamTam.Rows.Add(maSP, tenSP, soLuong, giaBan, thanhTien);
-
+                // Thêm vào bảng tạm
+                dtSanPhamTam.Rows.Add(maSP, tenSP, soLuong, giaBan, thanhTien);
+            }
             // Cập nhật tổng tiền
             decimal tong = dtSanPhamTam.AsEnumerable().Sum(row => row.Field<decimal>("ThanhTien"));
             txtTongTien.Text = tong.ToString("N0"); // Ví dụ: 120,000
@@ -382,5 +406,40 @@ namespace QlyBanHang
             }
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvSanPham.CurrentRow != null)
+            {
+                DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    // Xóa dòng được chọn
+                    dgvSanPham.Rows.RemoveAt(dgvSanPham.CurrentRow.Index);
+
+                    // Cập nhật lại tổng tiền
+                    decimal tong = dtSanPhamTam.AsEnumerable().Sum(row => row.Field<decimal>("ThanhTien"));
+                    txtTongTien.Text = tong.ToString("N0");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dòng cần xóa.");
+            }
+        }
+
+        private void cmbHinhThuc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHinhThuc.SelectedItem != null && cmbHinhThuc.SelectedItem.ToString() == "Online")
+            {
+                txtDiaChi.Visible = true;
+                lblDiaChi.Visible = true; // Nếu bạn có label đi kèm
+            }
+            else
+            {
+                txtDiaChi.Visible = false;
+                lblDiaChi.Visible = false; // Ẩn label luôn nếu có
+                txtDiaChi.Clear(); // Xóa nội dung cũ
+            }
+        }
     }
 }

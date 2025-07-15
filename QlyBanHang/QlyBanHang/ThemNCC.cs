@@ -107,6 +107,11 @@ namespace QlyBanHang
                 MessageBox.Show("Lỗi khi thêm: " + ex.Message);
             }
         }
+
+        private void txtMaNCC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemNV));
             this.txtMK = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -149,11 +150,11 @@
             // 
             // btnThemSP
             // 
-            this.btnThemSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnThemSP.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnThemSP.FlatAppearance.BorderSize = 0;
             this.btnThemSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemSP.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSP.Location = new System.Drawing.Point(259, 296);
+            this.btnThemSP.Location = new System.Drawing.Point(259, 255);
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Size = new System.Drawing.Size(196, 47);
             this.btnThemSP.TabIndex = 36;
@@ -229,9 +230,10 @@
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThemNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ThemNV";
+            this.Text = "Thêm nhân viên";
             this.Load += new System.EventHandler(this.ThemNV_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

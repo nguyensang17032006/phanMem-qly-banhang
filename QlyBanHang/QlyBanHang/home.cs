@@ -79,8 +79,11 @@ namespace QlyBanHang
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new Login().Show();
+            DialogResult result= MessageBox.Show("Bạn có chắc chắn muốn thoát ứng dụng ko?", "Xác nhận thoát",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (result != DialogResult.No)
+            {
+                this.Close();
+            }
         }
 
         private void panelContent_Paint(object sender, PaintEventArgs e)
@@ -100,16 +103,49 @@ namespace QlyBanHang
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
+            if (TaiKhoan.Quyen != "Admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
+
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             LoadPage(new UC_NhanVien());
         }
 
         private void btnNCC_Click(object sender, EventArgs e)
         {
+            if (TaiKhoan.Quyen != "Admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
+
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             LoadPage(new UC_NhaCungCap());
         }
 
         private void btnKho_Click(object sender, EventArgs e)
         {
+            if (TaiKhoan.Quyen != "Admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
+
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             LoadPage(new UC_KhoHang());
         }
     }

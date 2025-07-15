@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietDonHang));
             this.dgvTTSP = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grb = new System.Windows.Forms.GroupBox();
@@ -237,6 +238,7 @@
             this.ClientSize = new System.Drawing.Size(1169, 498);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grb);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChiTietDonHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết đơn hàng";

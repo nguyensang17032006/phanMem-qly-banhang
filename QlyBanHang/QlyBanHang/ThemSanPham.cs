@@ -21,6 +21,7 @@ namespace QlyBanHang
 
         private void ThemSanPham_Load(object sender, EventArgs e)
         {
+            txtMaSP.Text = TaoMaSPTuDong();
             LoadNhaCungCap();
         }
 
@@ -35,9 +36,28 @@ namespace QlyBanHang
 
                 cmbNhaCungCap.DataSource = dt;
                 cmbNhaCungCap.DisplayMember = "TenNCC";
-                cmbNhaCungCap.ValueMember = "MaNCC";
+                cmbNhaCungCap.ValueMember = "TenNCC";
                 cmbNhaCungCap.SelectedIndex = -1;
             }
+        }
+        private string TaoMaSPTuDong()
+        {
+            string maMoi = "SP001";
+
+            using (SqlConnection conn = SqlCon.GetConnection())
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT MAX(MaSP) FROM SanPham WHERE MaSP LIKE 'SP%'", conn);
+                object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value && result != null)
+                {
+                    string maCu = result.ToString(); // PN003
+                    int so = int.Parse(maCu.Substring(2)); // 3
+                    maMoi = "SP" + (so + 1).ToString("D3");
+                }
+            }
+
+            return maMoi;
         }
 
         private void btnThemSP_Click(object sender, EventArgs e)

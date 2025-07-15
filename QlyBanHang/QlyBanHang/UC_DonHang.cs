@@ -103,6 +103,17 @@ namespace QlyBanHang
 
         private void btnXoaDH_Click(object sender, EventArgs e)
         {
+            if (TaiKhoan.Quyen != "Admin")
+            {
+                FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
+                xacNhan.ShowDialog();
+
+                if (!xacNhan.LaAdminXacNhan)
+                {
+                    MessageBox.Show("Thao tác bị huỷ vì không có xác nhận admin.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             // Kiểm tra dòng được chọn
             if (dgvDonHang.CurrentRow == null || dgvDonHang.CurrentRow.IsNewRow)
             {

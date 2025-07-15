@@ -24,9 +24,9 @@ namespace QlyBanHang
             dtpNgayNhap.Value = DateTime.Now;
             dgvNhap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             LoadMaNCC();
-            LoadMaSP();
             TaoBangTamNhap();
-            cmbMaSP.SelectedIndexChanged += cmbMaSP_SelectedIndexChanged;
+            cbSanPham.SelectedIndexChanged += cbSanPham_SelectedIndexChanged;
+
         }
 
         private string TaoMaPhieuNhapTuDong()
@@ -52,39 +52,26 @@ namespace QlyBanHang
         {
             using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT MaNCC FROM NhaCungCap", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT MaNCC,TenNCC FROM NhaCungCap", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
                 cmbNCC.DataSource = dt;
                 cmbNCC.DisplayMember = "MaNCC";
-                cmbNCC.ValueMember = "MaNCC";
-                cmbNCC.SelectedIndex = -1;
+                cmbNCC.ValueMember = "TenNCC";
             }
         }
 
-        private void LoadMaSP()
+        
+
+        private void cbSanPham_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
-            {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT MaSP, TenSP, TheLoai FROM SanPham", conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
+            if (cbSanPham.SelectedIndex == -1 || cbSanPham.SelectedValue == null) return;
 
-                cmbMaSP.DataSource = dt;
-                cmbMaSP.DisplayMember = "MaSP";
-                cmbMaSP.ValueMember = "MaSP";
-                cmbMaSP.SelectedIndex = -1;
-            }
-        }
-
-        private void cmbMaSP_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbMaSP.SelectedIndex == -1 || cmbMaSP.SelectedValue == null) return;
-
-            DataRowView drv = (DataRowView)cmbMaSP.SelectedItem;
+            DataRowView drv = (DataRowView)cbSanPham.SelectedItem;
             txtTenSP.Text = drv["TenSP"].ToString();
             txtTheLoai.Text = drv["TheLoai"].ToString();
+            txtGiaBan.Text = drv["GiaBan"].ToString();
         }
 
         DataTable dtChiTietNhap = new DataTable();
@@ -109,47 +96,6 @@ namespace QlyBanHang
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (cmbMaSP.SelectedIndex == -1) return;
-
-            string maSP = cmbMaSP.SelectedValue.ToString();
-            string tenSP = txtTenSP.Text;
-            string theLoai = txtTheLoai.Text;
-            if (!int.TryParse(txtSoLuong.Text, out int soLuong) || soLuong <= 0)
-            {
-                MessageBox.Show("Số lượng không hợp lệ!");
-                return;
-            }
-
-            if (!decimal.TryParse(txtGiaNhap.Text, out decimal DonGia) || DonGia <= 0)
-            {
-                MessageBox.Show("Giá nhập không hợp lệ!");
-                return;
-            }
-            // Kiểm tra giá nhập không được cao hơn giá bán
-            using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT GiaBan FROM SanPham WHERE MaSP = @MaSP", conn);
-                cmd.Parameters.AddWithValue("@MaSP", maSP);
-
-                object giaBanObj = cmd.ExecuteScalar();
-                if (giaBanObj != null && decimal.TryParse(giaBanObj.ToString(), out decimal giaBan))
-                {
-                    if (DonGia > giaBan)
-                    {
-                        MessageBox.Show($"Giá nhập ({DonGia:N0}) không được lớn hơn giá bán ({giaBan:N0})!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-                }
-            }
-
-
-            decimal thanhTien = soLuong * DonGia;
-            dtChiTietNhap.Rows.Add(maSP, tenSP, theLoai, soLuong, DonGia, thanhTien);
-
-            // Tính tổng tiền
-            decimal tong = dtChiTietNhap.AsEnumerable().Sum(row => row.Field<decimal>("ThanhTien"));
-            txtTongTien.Text = tong.ToString("N0");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -166,7 +112,25 @@ namespace QlyBanHang
             }
 
             string maNhap = txtMaNhap.Text;
-            string maNCC = cmbNCC.SelectedValue.ToString();
+            string tenNCC = cmbNCC.SelectedValue.ToString();
+            string maNCC = "";
+
+            using (SqlConnection conn = SqlCon.GetConnection())
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT MaNCC FROM NhaCungCap WHERE TenNCC = @TenNCC", conn);
+                cmd.Parameters.AddWithValue("@TenNCC", tenNCC);
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    maNCC = result.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy mã NCC!");
+                    return;
+                }
+            }
             DateTime ngayNhap = dtpNgayNhap.Value;
             decimal tongTien = dtChiTietNhap.AsEnumerable().Sum(r => r.Field<decimal>("ThanhTien"));
 
@@ -204,12 +168,12 @@ namespace QlyBanHang
                         cmdCT.ExecuteNonQuery();
 
                         // Tăng số lượng tồn
-                        SqlCommand cmdUpdate = new SqlCommand(@"UPDATE SanPham
-                                                        SET SoLuongTon = SoLuongTon + @SoLuong
-                                                        WHERE MaSP = @MaSP", conn, tran);
-                        cmdUpdate.Parameters.AddWithValue("@SoLuong", soLuong);
-                        cmdUpdate.Parameters.AddWithValue("@MaSP", maSP);
-                        cmdUpdate.ExecuteNonQuery();
+                        //SqlCommand cmdUpdate = new SqlCommand(@"UPDATE SanPham
+                        //                                SET SoLuongTon = SoLuongTon + @SoLuong
+                        //                                WHERE MaSP = @MaSP", conn, tran);
+                        //cmdUpdate.Parameters.AddWithValue("@SoLuong", soLuong);
+                        //cmdUpdate.Parameters.AddWithValue("@MaSP", maSP);
+                        //cmdUpdate.ExecuteNonQuery();
                     }
 
                     tran.Commit();
@@ -227,5 +191,143 @@ namespace QlyBanHang
                 }
             }
         }
+
+        private void cmbNCC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbNCC.SelectedIndex == -1 || cmbNCC.SelectedItem == null)
+                return;
+
+            // Clear cbSanPham trước khi load mới
+            cbSanPham.DataSource = null;
+            cbSanPham.Items.Clear();  // Cho chắc
+
+            // Lấy TenNCC từ dòng được chọn
+            DataRowView drv = (DataRowView)cmbNCC.SelectedItem;
+            string tenNCC = drv["TenNCC"].ToString();
+            txtTenHang.Text = tenNCC;
+
+            // Lọc sản phẩm theo tên nhà cung cấp (Hang)
+            SqlConnection conn = SqlCon.GetConnection();
+            string query = "SELECT MaSP, TenSP, TheLoai, GiaBan FROM SanPham WHERE Hang = @TenNCC";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@TenNCC", tenNCC);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            // Gán dữ liệu mới
+            cbSanPham.DataSource = dt;
+            cbSanPham.DisplayMember = "MaSP";
+            cbSanPham.ValueMember = "MaSP";
+            txtTenSP.Clear();
+            txtTheLoai.Clear();
+
+            if (cbSanPham.Items.Count > 0)
+            {
+                cbSanPham.SelectedIndex = 0; // Chọn sản phẩm đầu tiên
+                cbSanPham_SelectedIndexChanged(null, null); // Gọi sự kiện thủ công để hiển thị thông tin
+            }
+        }
+
+
+        private void cbSanPham_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenSP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (cbSanPham.SelectedIndex == -1) return;
+
+            string maSP = cbSanPham.SelectedValue.ToString();
+            string tenSP = txtTenSP.Text;
+            string theLoai = txtTheLoai.Text;
+
+            if (!int.TryParse(txtSoLuong.Text, out int soLuong) || soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng không hợp lệ!");
+                return;
+            }
+
+            if (!decimal.TryParse(txtGiaNhap.Text, out decimal DonGia) || DonGia <= 0)
+            {
+                MessageBox.Show("Giá nhập không hợp lệ!");
+                return;
+            }
+
+            // Kiểm tra giá nhập không được cao hơn giá bán
+            using (SqlConnection conn = new SqlConnection(kn.ConnectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT GiaBan FROM SanPham WHERE MaSP = @MaSP", conn);
+                cmd.Parameters.AddWithValue("@MaSP", maSP);
+
+                object giaBanObj = cmd.ExecuteScalar();
+                if (giaBanObj != null && decimal.TryParse(giaBanObj.ToString(), out decimal giaBan))
+                {
+                    if (DonGia > giaBan)
+                    {
+                        MessageBox.Show($"Giá nhập ({DonGia:N0}) không được lớn hơn giá bán ({giaBan:N0})!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
+
+            //  Kiểm tra nếu sản phẩm đã có trong bảng => cập nhật
+            bool daTonTai = false;
+            foreach (DataRow row in dtChiTietNhap.Rows)
+            {
+                if (row["MaSP"].ToString() == maSP)
+                {
+                    int slCu = Convert.ToInt32(row["SoLuong"]);
+                    row["SoLuong"] = slCu + soLuong;
+                    row["DonGia"] = DonGia; // Nếu muốn cập nhật giá mới
+                    row["ThanhTien"] = (slCu + soLuong) * DonGia;
+                    daTonTai = true;
+                    break;
+                }
+            }
+
+            // Nếu chưa có thì thêm mới
+            if (!daTonTai)
+            {
+                decimal thanhTien = soLuong * DonGia;
+                dtChiTietNhap.Rows.Add(maSP, tenSP, theLoai, soLuong, DonGia, thanhTien);
+                txtSoLuong.Clear();
+                txtGiaNhap.Clear();
+            }
+
+            // Tính tổng tiền
+            decimal tong = dtChiTietNhap.AsEnumerable().Sum(row => row.Field<decimal>("ThanhTien"));
+            txtTongTien.Text = tong.ToString("N0");
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvNhap.CurrentRow != null)
+            {
+                DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    // Xóa dòng được chọn
+                    dgvNhap.Rows.RemoveAt(dgvNhap.CurrentRow.Index);
+
+                    // Cập nhật lại tổng tiền
+                    decimal tong = dtChiTietNhap.AsEnumerable().Sum(row => row.Field<decimal>("ThanhTien"));
+                    txtTongTien.Text = tong.ToString("N0");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dòng cần xóa.");
+            }
+        }
+
     }
 }

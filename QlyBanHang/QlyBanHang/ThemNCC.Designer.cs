@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemNhaCungCap));
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -35,8 +36,8 @@
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMaNCC = new System.Windows.Forms.TextBox();
             this.btnThemSP = new System.Windows.Forms.Button();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -107,15 +108,6 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Mã NCC";
             // 
-            // txtMaNCC
-            // 
-            this.txtMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNCC.Location = new System.Drawing.Point(105, 28);
-            this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.ReadOnly = true;
-            this.txtMaNCC.Size = new System.Drawing.Size(204, 30);
-            this.txtMaNCC.TabIndex = 17;
-            // 
             // btnThemSP
             // 
             this.btnThemSP.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -130,11 +122,20 @@
             this.btnThemSP.UseVisualStyleBackColor = false;
             this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
             // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNCC.Location = new System.Drawing.Point(105, 28);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(204, 30);
+            this.txtMaNCC.TabIndex = 36;
+            // 
             // ThemNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 211);
+            this.Controls.Add(this.txtMaNCC);
             this.Controls.Add(this.btnThemSP);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSDT);
@@ -143,7 +144,7 @@
             this.Controls.Add(this.txtTenNCC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtMaNCC);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThemNhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm nhà cung cấp";
@@ -162,7 +163,7 @@
         private System.Windows.Forms.TextBox txtTenNCC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMaNCC;
         private System.Windows.Forms.Button btnThemSP;
+        private System.Windows.Forms.TextBox txtMaNCC;
     }
 }

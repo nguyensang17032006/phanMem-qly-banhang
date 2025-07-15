@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemKH));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtSDTKH = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
@@ -140,7 +141,10 @@
             this.ClientSize = new System.Drawing.Size(756, 246);
             this.Controls.Add(this.btnThemKH);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThemKH";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm khách hàng";
             this.Load += new System.EventHandler(this.ThemNhaCungCap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

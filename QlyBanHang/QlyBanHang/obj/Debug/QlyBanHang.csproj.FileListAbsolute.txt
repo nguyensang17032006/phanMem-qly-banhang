@@ -47,3 +47,4 @@ D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNhaCungCap.
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemNV.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemSanPham.resources
 D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.ThemKH.resources
+D:\ALL\DoAnQlyBanHang\QlyBanHang\QlyBanHang\obj\Debug\QlyBanHang.FormXacNhanAdmin.resources
