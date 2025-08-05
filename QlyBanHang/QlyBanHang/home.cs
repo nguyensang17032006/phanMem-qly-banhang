@@ -148,5 +148,10 @@ namespace QlyBanHang
             }
             LoadPage(new UC_KhoHang());
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

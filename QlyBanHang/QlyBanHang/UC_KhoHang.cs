@@ -59,7 +59,7 @@ namespace QlyBanHang
 
         private void btnXoaSP_Click(object sender, EventArgs e)
         {
-            if (TaiKhoan.Quyen != "admin")
+            if (TaiKhoan.Quyen != "Admin")
             {
                 FormXacNhanAdmin xacNhan = new FormXacNhanAdmin();
                 xacNhan.ShowDialog();

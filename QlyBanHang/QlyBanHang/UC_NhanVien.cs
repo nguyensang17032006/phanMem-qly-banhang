@@ -35,10 +35,8 @@ namespace QlyBanHang
         private void UC_NhanVien_Load(object sender, EventArgs e)
         {
             ds.Clear();
-            adapter = new SqlDataAdapter("select * from NhanVien", kn);
+            adapter = new SqlDataAdapter("select *,(HoTenLot + ' ' + Ten) AS HoTen from NhanVien", kn);
             adapter.Fill(ds);
-            if (!ds.Tables[0].Columns.Contains("HoTen"))
-                ds.Tables[0].Columns.Add("HoTen", typeof(string), "HoTenLot + ' ' + Ten");
             bs.DataSource = ds.Tables[0];
             dgvNhanVien.DataSource = bs;
             dgvNhanVien.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill;
@@ -53,7 +51,7 @@ namespace QlyBanHang
             txtSDT.DataBindings.Clear();
             txtSDT.DataBindings.Add("Text", bs, "SDT", true, DataSourceUpdateMode.Never);
             txtTenNV.DataBindings.Clear();
-            txtTenNV.DataBindings.Add("Text",bs,"HoTen",true,DataSourceUpdateMode.Never);
+            txtTenNV.DataBindings.Add("Text", bs, "HoTen", true, DataSourceUpdateMode.Never);
             txtTK.DataBindings.Clear();
             txtTK.DataBindings.Add("Text",bs,"TK",true,DataSourceUpdateMode.Never);
         }
@@ -208,9 +206,27 @@ namespace QlyBanHang
             }
             else
             {
-
-                bs.Filter = $"MaNV = '{maCanTim}'";
+                bs.Filter = $"" + $"MaNV LIKE '%{maCanTim}%' OR " +
+                            $"HoTenLot LIKE '%{maCanTim}%' OR " +
+                            $"Ten LIKE '%{maCanTim}%' OR " +
+                            $"Email LIKE '%{maCanTim}%' OR " +
+                            $"SDT LIKE '%{maCanTim}%' OR " +
+                            $"TK LIKE '%{maCanTim}%'";
             }
+        }
+
+        private void txttimkiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {  
+                btntimkiem_Click(sender, e);
+                e.SuppressKeyPress = true; 
+            }
+            }
+
+        private void txttimkiem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

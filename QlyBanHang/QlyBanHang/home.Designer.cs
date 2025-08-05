@@ -41,6 +41,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.qLDangNhapDataSet = new QlyBanHang.QLDangNhapDataSet();
             this.qLDangNhapDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
@@ -132,11 +133,18 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel1.CausesValidation = false;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.lblChucVu);
             this.panel1.Controls.Add(this.lblTenNV);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // qLDangNhapDataSet
             // 
@@ -189,5 +197,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.BindingSource qLDangNhapDataSetBindingSource;
         private QLDangNhapDataSet qLDangNhapDataSet;
+        private System.Windows.Forms.Label label1;
     }
 }

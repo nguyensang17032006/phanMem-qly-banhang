@@ -589,7 +589,7 @@
     <value>Tahoma, 10.2pt, style=Bold, Italic</value>
   </data>
   <data name="lblChucVu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 38</value>
+    <value>24, 36</value>
   </data>
   <data name="lblChucVu.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 21</value>
@@ -610,7 +610,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblChucVu.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lblTenNV.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -622,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblTenNV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+    <value>24, 9</value>
   </data>
   <data name="lblTenNV.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 21</value>
@@ -643,7 +643,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblTenNV.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnThoat.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -682,7 +682,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnThoat.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="panelContent.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 70</value>
@@ -704,6 +704,39 @@
   </data>
   <data name="&gt;&gt;panelContent.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.2pt, style=Bold, Italic</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 21</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Nhóm 12</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1880,7 +1913,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Home</value>
+    <value>Quản lý bán hàng thời trang</value>
   </data>
   <data name="&gt;&gt;qLDangNhapDataSet.Name" xml:space="preserve">
     <value>qLDangNhapDataSet</value>

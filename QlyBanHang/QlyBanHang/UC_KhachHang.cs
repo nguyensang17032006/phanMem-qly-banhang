@@ -189,5 +189,57 @@ namespace QlyBanHang
             }
         }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = toolStripTextBox1.Text.Trim();
+
+            
+            if (string.IsNullOrWhiteSpace(tuKhoa))
+            {
+                ds.Clear();
+                adapter.Fill(ds);
+                bs.DataSource = ds.Tables[0]; 
+                return;
+            }
+
+            string sql = @"SELECT * FROM KhachHang 
+                   WHERE MaKhachHang LIKE @TuKhoa OR TenKH LIKE @TuKhoa";
+
+            try
+            {
+                SqlDataAdapter timAdapter = new SqlDataAdapter(sql, kn);
+                timAdapter.SelectCommand.Parameters.AddWithValue("@TuKhoa", "%" + tuKhoa + "%");
+
+                DataTable dtTim = new DataTable();
+                timAdapter.Fill(dtTim);
+
+                if (dtTim.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy khách hàng nào phù hợp.", "Kết quả tìm kiếm", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                bs.DataSource = dtTim;
+                dgvKhachHang.DataSource = bs;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tìm kiếm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void toolStripTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                toolStripButton1_Click(sender, e); // Gọi lại hàm tìm kiếm
+                e.SuppressKeyPress = true; // Không cho tiếng 'beep' khi ấn Enter
+            }
+        }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

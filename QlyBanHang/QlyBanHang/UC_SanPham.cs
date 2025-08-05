@@ -168,8 +168,8 @@ namespace QlyBanHang
         }
         private void RefreshSanPham()
         {
-            ds.Clear(); // Xoá dữ liệu cũ
-            thucHienBindingSource(); // Load lại
+            ds.Clear(); 
+            thucHienBindingSource(); 
         }
         private void XoaSanPham(string maSP)
         {
@@ -291,6 +291,20 @@ namespace QlyBanHang
                 LoadDanhSachSanPham();
             }
         }
-        
+
+        private void txtTimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+
+                toolStripButton1_Click(sender, e);
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }
